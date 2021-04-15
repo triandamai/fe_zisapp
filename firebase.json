@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "zisapp",
-      "public": "public",
+      "public": "dist",
       "ignore": [
         "firebase.json",
         "**/.*",
