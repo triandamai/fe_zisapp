@@ -1,0 +1,27 @@
+[
+    {
+        "text": "No",
+        "value": "id"
+    },
+    {
+        "text": "Nama Lengkap",
+        "sortable": true,
+        "value": "fullname"
+    },
+    {
+        "text": "Jabatan",
+        "value": "jabatan_id"
+    },
+    {
+        "text": "Tempat Lahir",
+        "value": "tempat_lahir"
+    },
+    {
+        "text": "Aktivitas",
+        "value": "updated_at"
+    },
+    {
+        "text": "Aksi",
+        "value": "action"
+    }
+]
