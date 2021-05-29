@@ -49,6 +49,30 @@ const routes = [
           reqiresAuth: true,
         },
       },
+      {
+        path: "muzaki",
+        name: "muzaki",
+        component: () => import("@/pages/muzaki/datamuzaki.vue"),
+        meta: {
+          title: "Data Muzaki",
+        },
+      },
+      {
+        path: "muzaki/add",
+        name: "addmuzaki",
+        component: () => import("@/pages/muzaki/addmuzaki.vue"),
+        meta: {
+          title: "Data Muzaki",
+        },
+      },
+      {
+        path: "muzaki/edit",
+        name: "editmuzaki",
+        component: () => import("@/pages/muzaki/editmuzaki.vue"),
+        meta: {
+          title: "Data Muzaki",
+        },
+      },
 
       /**
        *

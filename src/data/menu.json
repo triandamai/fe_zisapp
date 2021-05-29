@@ -14,30 +14,29 @@
       "active": false
     },
     {
-      "path": "/main/nasabah",
       "title": "Pelayanan",
       "icon": "server",
       "type": "sub",
       "active": false,
       "children": [
         {
-          "path": "/main/nasabah",
+          "path": "/main/muzaki",
           "title": "Master",
           "type": "sub",
           "active": false,
           "children": [
             {
-              "path": "/main/akad",
+              "path": "/main/muzaki",
               "title": "Muzaki",
               "type": "link"
             },
             {
-              "path": "/main/akad",
+              "path": "/main/mustahik",
               "title": "Mustahik",
               "type": "link"
             },
             {
-              "path": "/main/akad",
+              "path": "main/kantorlayanan",
               "title": "Kantor Layanan",
               "type": "link"
             }
@@ -47,114 +46,65 @@
     },
     {
       "title": "Keuangan",
-      "icon": "monitor",
+      "icon": "server",
       "type": "sub",
-      "badgeType": "primary",
-      "badgeValue": "5",
       "active": false,
-      "path": "Master Data",
       "children": [
         {
-          "path": "/main/akad",
-          "title": "Akad",
-          "children": [
-            {
-              "path": "/main/akad",
-              "title": "Master",
-              "type": "sub",
-              "children": [
-                {
-                  "path": "Master Data",
-                  "title": "Periode",
-                  "type": "link"
-                }
-              ]
-            },
-            {
-              "path": "/main/jenistransaksi",
-              "title": "Type of Transaction",
-              "type": "link"
-            },
-            {
-              "path": "/main/produk",
-              "title": "Product",
-              "type": "link"
-            },
-            {
-              "path": "/main/jabatan",
-              "title": "Departement",
-              "type": "link"
-            },
-            {
-              "path": "/main/pegawai",
-              "title": "Employees",
-              "type": "link"
-            }
-          ]
-        },
-        {
-          "headTitle1": "Shortcut",
-          "headTitle2": "Form etc.",
-          "type": "headtitle",
-          "path": "ShortCut"
-        },
-        {
-          "title": "Program",
-          "icon": "server",
+          "path": "/main/periode",
           "type": "sub",
+          "title": "Master",
           "active": false,
-          "path": "Form",
           "children": [
             {
-              "title": "Master",
-              "type": "sub",
-              "active": false,
-              "children": [
-                {
-                  "path": "Program",
-                  "title": "Mustahik",
-                  "type": "link"
-                }
-              ]
-            },
-            {
-              "title": "Transaksi",
-              "type": "sub",
-              "active": false,
-              "children": [
-                {
-                  "path": "Transaksi",
-                  "title": "Rekomendasi",
-                  "type": "link"
-                }
-              ]
-            },
-            {
-              "title": "Laporan",
-              "type": "sub",
+              "path": "/main/periode",
+              "type": "link",
+              "title": "Periode",
               "active": false
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "Program",
+      "icon": "server",
+      "type": "sub",
+      "active": false,
+      "children": [
         {
-          "headTitle1": "Advance",
-          "headTitle2": "Settings,Role & Group",
-          "type": "headtitle",
-          "path": "Advance"
-        },
-        {
-          "title": "System",
-          "icon": "settings",
           "type": "sub",
-          "badgeType": "primary",
-          "badgeValue": "3",
+          "title": "Master",
           "active": false,
-          "path": "System",
           "children": [
             {
-              "path": "/main/user",
-              "title": "User",
-              "type": "link"
+              "path": "/main/periode",
+              "type": "link",
+              "title": "Periode",
+              "active": false
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "title": "Akuntansi",
+      "icon": "server",
+      "type": "sub",
+      "active": false,
+      "children": [
+        {
+          "path": "/main/periode",
+          "type": "sub",
+          "title": "Transaksi",
+          "active": false,
+          "children": [
+            {
+              "path": "/main/periode",
+              "type": "link",
+              "title": "Donasi",
+              "active": false
             }
           ]
         }
