@@ -102,46 +102,20 @@
     <!-- search -->
     <div class="nav-right col-8 pull-right right-header p-0">
       <ul class="nav-menus">
-        <li class="language-nav">
-          <b-dropdown
-            id="langddm"
-            class="translate_wrapper ml-2"
-            variant="light"
-            size="sm"
-            toggle-class="language-button"
-          >
-            <template slot="button-content">
-              <i class="flag-icon" :class="langIcon"></i>
-              <span class="name">{{ $i18n.locale }}</span>
-            </template>
-            <b-dropdown-item
-              v-for="(l, index) in localeOptions"
-              :key="index"
-              @click="changeLocale(l)"
-            >
-              <i class="flag-icon" :class="l.icon"></i>
-              {{ l.name }}</b-dropdown-item
-            >
-          </b-dropdown>
-        </li>
-        <li>
-          <span class="header-search"
-            ><feather type="search" @click="search_open()"></feather
-          ></span>
-        </li>
-
         <li>
           <div class="mode">
             <i
               class="fa fa-moon-o"
               v-show="mixLayout == 'light-only'"
               @click="customizeMixLayout('dark-only')"
-            ></i>
+            >
+            </i>
             <i
               class="fa fa-lightbulb-o"
               v-show="mixLayout == 'dark-only'"
               @click="customizeMixLayout('light-only')"
-            ></i>
+            >
+            </i>
           </div>
         </li>
 
@@ -300,7 +274,7 @@ export default {
     search_close() {
       this.searchOpen = false;
     },
-    searchterm: function () {
+    searchterm: function() {
       this.$store.dispatch("menu/searchTerm", this.terms);
     },
     changeLocale(locale) {
@@ -361,7 +335,7 @@ export default {
         this.$router.go(this.$route.path);
       }
     },
-    menuItems: function () {
+    menuItems: function() {
       this.terms ? this.addFix() : this.removeFix();
       if (!this.menuItems.length) this.searchResultEmpty = true;
       else this.searchResultEmpty = false;
@@ -369,4 +343,3 @@ export default {
   },
 };
 </script>
-

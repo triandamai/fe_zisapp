@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-12 footer-copyright text-center">
             <p class="mb-0">
-              Copyright 2020 © Bank Falah Syariah by BakaranProject
+              Copyright 2021 © LAZ Al-Irsyad Purwokerto by Trisna Maulida
             </p>
           </div>
         </div>

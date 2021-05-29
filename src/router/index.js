@@ -1,6 +1,6 @@
 /**
- * Author Trian Damai
- * Bakaran Project
+ * Author
+ *
  */
 import Vue from "vue";
 import Router from "vue-router";
@@ -33,12 +33,12 @@ const routes = [
     path: "/main",
     component: () => import("../components/body"),
     meta: {
-      reqiresAuth: true
+      reqiresAuth: true,
     },
     children: [
       {
         path: "",
-        redirect: "dashboard"
+        redirect: "dashboard",
       },
       {
         path: "dashboard",
@@ -46,8 +46,8 @@ const routes = [
         component: () => import("@/pages/dashboard/dashboard.vue"),
         meta: {
           title: "Default Dashboard | Endless - Premium Admin Template",
-          reqiresAuth: true
-        }
+          reqiresAuth: true,
+        },
       },
 
       /**
@@ -59,16 +59,16 @@ const routes = [
         component: () => import("@/pages/akad/akad.vue"),
         meta: {
           title: "Default Dashboard | Endless - Premium Admin Template",
-          reqiresAuth: true
-        }
-      }
-    ]
+          reqiresAuth: true,
+        },
+      },
+    ],
   },
   {
     path: "/login",
     name: "login",
-    component: () => import("@/pages/auth/login.vue")
-  }
+    component: () => import("@/pages/auth/login.vue"),
+  },
 ];
 
 /**
@@ -82,7 +82,7 @@ const router = new Router({
   linkActiveClass: "active",
   scrollBehavior() {
     return { x: 0, y: 0 };
-  }
+  },
 });
 
 /**
