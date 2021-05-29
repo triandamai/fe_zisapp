@@ -4,39 +4,21 @@
       "headTitle1": "General",
       "headTitle2": "Dashboards,features & data.",
       "type": "headtitle",
-      "path": "General",
-      "idx": 1,
-      "privilage": {
-        "roles": [
-          1,
-          2
-        ],
-        "groups": []
-      }
+      "path": "General"
     },
     {
       "path": "/main/dashboard",
       "title": "Dashboard",
       "icon": "codesandbox",
       "type": "link",
-      "active": false,
-      "idx": 2,
-      "privilage": {
-        "roles": [],
-        "groups": []
-      }
+      "active": false
     },
     {
       "path": "/main/nasabah",
       "title": "Customer",
       "icon": "users",
       "type": "link",
-      "active": false,
-      "idx": 2,
-      "privilage": {
-        "roles": [],
-        "groups": []
-      }
+      "active": false
     },
     {
       "title": "Master Data",
@@ -46,35 +28,10 @@
       "badgeValue": "5",
       "active": false,
       "path": "Master Data",
-      "idx": 3,
-      "privilage": {
-        "roles": [],
-        "groups": []
-      },
       "children": [
         {
           "path": "/main/akad",
           "title": "Akad",
-          "type": "link"
-        },
-        {
-          "path": "/main/jenistransaksi",
-          "title": "Type of Transaction",
-          "type": "link"
-        },
-        {
-          "path": "/main/produk",
-          "title": "Product",
-          "type": "link"
-        },
-        {
-          "path": "/main/jabatan",
-          "title": "Departement",
-          "type": "link"
-        },
-        {
-          "path": "/main/pegawai",
-          "title": "Employees",
           "type": "link"
         }
       ]
@@ -83,12 +40,7 @@
       "headTitle1": "Shortcut",
       "headTitle2": "Form etc.",
       "type": "headtitle",
-      "path": "ShortCut",
-      "idx": 5,
-      "privilage": {
-        "roles": [],
-        "groups": []
-      }
+      "path": "ShortCut"
     },
     {
       "title": "Form",
@@ -96,11 +48,6 @@
       "type": "sub",
       "active": false,
       "path": "Form",
-      "idx": 6,
-      "privilage": {
-        "roles": [],
-        "groups": []
-      },
       "children": [
         {
           "title": "Master Data",
@@ -125,12 +72,7 @@
       "headTitle1": "Advance",
       "headTitle2": "Settings,Role & Group",
       "type": "headtitle",
-      "path": "Advance",
-      "idx": 7,
-      "privilage": {
-        "roles": [],
-        "groups": []
-      }
+      "path": "Advance"
     },
     {
       "title": "System",
@@ -140,30 +82,10 @@
       "badgeValue": "3",
       "active": false,
       "path": "System",
-      "idx": 8,
-      "privilage": {
-        "roles": [],
-        "groups": []
-      },
       "children": [
-        {
-          "path": "/main/menu",
-          "title": "Menus",
-          "type": "link"
-        },
         {
           "path": "/main/user",
           "title": "User",
-          "type": "link"
-        },
-        {
-          "path": "/main/group",
-          "title": "Group",
-          "type": "link"
-        },
-        {
-          "path": "/main/role",
-          "title": "Role",
           "type": "link"
         }
       ]
