@@ -15,13 +15,38 @@
     },
     {
       "path": "/main/nasabah",
-      "title": "Customer",
-      "icon": "users",
-      "type": "link",
-      "active": false
+      "title": "Pelayanan",
+      "icon": "server",
+      "type": "sub",
+      "active": false,
+      "children": [
+        {
+          "path": "/main/nasabah",
+          "title": "Master",
+          "type": "sub",
+          "active": false,
+          "children": [
+            {
+              "path": "/main/akad",
+              "title": "Muzaki",
+              "type": "link"
+            },
+            {
+              "path": "/main/akad",
+              "title": "Mustahik",
+              "type": "link"
+            },
+            {
+              "path": "/main/akad",
+              "title": "Kantor Layanan",
+              "type": "link"
+            }
+          ]
+        }
+      ]
     },
     {
-      "title": "Master Data",
+      "title": "Keuangan",
       "icon": "monitor",
       "type": "sub",
       "badgeType": "primary",
@@ -32,61 +57,106 @@
         {
           "path": "/main/akad",
           "title": "Akad",
-          "type": "link"
-        }
-      ]
-    },
-    {
-      "headTitle1": "Shortcut",
-      "headTitle2": "Form etc.",
-      "type": "headtitle",
-      "path": "ShortCut"
-    },
-    {
-      "title": "Form",
-      "icon": "server",
-      "type": "sub",
-      "active": false,
-      "path": "Form",
-      "children": [
-        {
-          "title": "Master Data",
-          "type": "sub",
-          "active": false,
           "children": [
             {
-              "path": "akad",
-              "title": "Add a Contract",
-              "type": "button"
+              "path": "/main/akad",
+              "title": "Master",
+              "type": "sub",
+              "children": [
+                {
+                  "path": "Master Data",
+                  "title": "Periode",
+                  "type": "link"
+                }
+              ]
+            },
+            {
+              "path": "/main/jenistransaksi",
+              "title": "Type of Transaction",
+              "type": "link"
+            },
+            {
+              "path": "/main/produk",
+              "title": "Product",
+              "type": "link"
+            },
+            {
+              "path": "/main/jabatan",
+              "title": "Departement",
+              "type": "link"
+            },
+            {
+              "path": "/main/pegawai",
+              "title": "Employees",
+              "type": "link"
             }
           ]
         },
         {
-          "path": "/main /nasabah/add",
-          "title": "Add Account",
-          "type": "link"
-        }
-      ]
-    },
-    {
-      "headTitle1": "Advance",
-      "headTitle2": "Settings,Role & Group",
-      "type": "headtitle",
-      "path": "Advance"
-    },
-    {
-      "title": "System",
-      "icon": "settings",
-      "type": "sub",
-      "badgeType": "primary",
-      "badgeValue": "3",
-      "active": false,
-      "path": "System",
-      "children": [
+          "headTitle1": "Shortcut",
+          "headTitle2": "Form etc.",
+          "type": "headtitle",
+          "path": "ShortCut"
+        },
         {
-          "path": "/main/user",
-          "title": "User",
-          "type": "link"
+          "title": "Program",
+          "icon": "server",
+          "type": "sub",
+          "active": false,
+          "path": "Form",
+          "children": [
+            {
+              "title": "Master",
+              "type": "sub",
+              "active": false,
+              "children": [
+                {
+                  "path": "Program",
+                  "title": "Mustahik",
+                  "type": "link"
+                }
+              ]
+            },
+            {
+              "title": "Transaksi",
+              "type": "sub",
+              "active": false,
+              "children": [
+                {
+                  "path": "Transaksi",
+                  "title": "Rekomendasi",
+                  "type": "link"
+                }
+              ]
+            },
+            {
+              "title": "Laporan",
+              "type": "sub",
+              "active": false
+            }
+          ]
+        },
+        {
+          "headTitle1": "Advance",
+          "headTitle2": "Settings,Role & Group",
+          "type": "headtitle",
+          "path": "Advance"
+        },
+        {
+          "title": "System",
+          "icon": "settings",
+          "type": "sub",
+          "badgeType": "primary",
+          "badgeValue": "3",
+          "active": false,
+          "path": "System",
+          "children": [
+            {
+              "path": "/main/user",
+              "title": "User",
+              "type": "link"
+            }
+          ]
         }
       ]
     }

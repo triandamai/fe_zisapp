@@ -1,16 +1,14 @@
 <template>
   <div>
-    <Breadcrumbs title="Akad" />
+    <Breadcrumbs title="Form " />
     <!-- Container-fluid starts-->
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <h5>Master Data Akad</h5>
-              <span
-                >lorem ipsum dolor sit amet, consectetur adipisicing elit</span
-              >
+              <h5>Data Muzaki</h5>
+              <span></span>
             </div>
             <div class="card-body">
               <data-table
