@@ -6,7 +6,6 @@ import Vue from "vue";
 import Router from "vue-router";
 import ApiService from "@/services/api.service";
 import { getUser } from "@/services/jwt.service";
-import { _ } from "core-js";
 
 // component
 
