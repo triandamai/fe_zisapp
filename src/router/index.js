@@ -6,6 +6,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import ApiService from "@/services/api.service";
 import { getUser } from "@/services/jwt.service";
+import { _ } from "core-js";
 
 // component
 
@@ -47,6 +48,30 @@ const routes = [
         meta: {
           title: "Default Dashboard | Endless - Premium Admin Template",
           reqiresAuth: true,
+        },
+      },
+      {
+        path: "muzaki",
+        name: "muzaki",
+        component: () => import("@/pages/muzaki/datamuzaki.vue"),
+        meta: {
+          title: "Data Muzaki",
+        },
+      },
+      {
+        path: "muzaki/add",
+        name: "addmuzaki",
+        component: () => import("@/pages/muzaki/addmuzaki.vue"),
+        meta: {
+          title: "Data Muzaki",
+        },
+      },
+      {
+        path: "muzaki/edit",
+        name: "editmuzaki",
+        component: () => import("@/pages/muzaki/editmuzaki.vue"),
+        meta: {
+          title: "Data Muzaki",
         },
       },
 
