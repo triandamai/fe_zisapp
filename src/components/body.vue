@@ -38,7 +38,6 @@
       </div>
       <Customizer />
     </div>
-    <form-akad :show="formakad" @close="hide" @submit="onSubmitAkad" />
   </div>
 </template>
 
@@ -72,7 +71,6 @@ export default {
       layout: (state) => state.layout.layout,
       togglesidebar: (state) => state.menu.togglesidebar,
       body: (state) => state.body,
-      formakad: (state) => state.formakad,
     }),
   },
   created() {
