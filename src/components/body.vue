@@ -98,7 +98,7 @@ export default {
         });
       });
     },
-    sidebar_toggle_var: function () {
+    sidebar_toggle_var: function() {
       this.resized =
         this.width <= 991 ? !this.sidebar_toggle_var : this.sidebar_toggle_var;
     },
@@ -116,15 +116,8 @@ export default {
     handleResize() {
       this.$store.dispatch("menu/resizetoggle");
     },
-    onSubmitAkad() {},
-    onSubmitDeposito() {},
-    onSubmitJenistransaksi() {},
-    onSubmitPembiayaan() {},
-    onSubmitProduk() {},
-    onSubmitSimpanan() {},
   },
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

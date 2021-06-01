@@ -77,15 +77,6 @@ const routes = [
       /**
        *
        */
-      {
-        path: "akad",
-        name: "akad",
-        component: () => import("@/pages/akad/akad.vue"),
-        meta: {
-          title: "Default Dashboard | Endless - Premium Admin Template",
-          reqiresAuth: true,
-        },
-      },
     ],
   },
   {
