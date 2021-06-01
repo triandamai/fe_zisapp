@@ -36,7 +36,7 @@
         </div>
         <Footer />
       </div>
-      <Customizer />
+      <!-- <Customizer /> -->
     </div>
   </div>
 </template>
@@ -96,7 +96,7 @@ export default {
         });
       });
     },
-    sidebar_toggle_var: function() {
+    sidebar_toggle_var: function () {
       this.resized =
         this.width <= 991 ? !this.sidebar_toggle_var : this.sidebar_toggle_var;
     },

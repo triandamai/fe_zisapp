@@ -145,8 +145,7 @@
           <ul class="profile-dropdown onhover-show-div">
             <li>
               <a href="#"
-                ><feather type="user"></feather
-                ><span>{{ $t("Profil") }}</span></a
+                ><feather type="user"></feather><span>{{ "Profil" }}</span></a
               >
             </li>
             <!-- <li>
@@ -164,8 +163,7 @@
             </li> -->
             <li>
               <a @click="logOut"
-                ><feather type="log-in"></feather
-                ><span>{{ $t("Logout") }}</span></a
+                ><feather type="log-in"></feather><span>{{ "Logout" }}</span></a
               >
             </li>
           </ul>
@@ -274,7 +272,7 @@ export default {
     search_close() {
       this.searchOpen = false;
     },
-    searchterm: function() {
+    searchterm: function () {
       this.$store.dispatch("menu/searchTerm", this.terms);
     },
     changeLocale(locale) {
@@ -335,7 +333,7 @@ export default {
         this.$router.go(this.$route.path);
       }
     },
-    menuItems: function() {
+    menuItems: function () {
       this.terms ? this.addFix() : this.removeFix();
       if (!this.menuItems.length) this.searchResultEmpty = true;
       else this.searchResultEmpty = false;
