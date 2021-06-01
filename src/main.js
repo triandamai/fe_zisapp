@@ -44,7 +44,7 @@ const messages = { en: en, es: es, id: id };
 
 Vue.component("data-table", DataTable);
 Vue.component("form-akad", FormAkad);
-Vue.component("form_muzaki", FormMuzaki);
+Vue.component("formMuzaki", FormMuzaki);
 
 Vue.component("Breadcrumbs", Breadcrumbs);
 
