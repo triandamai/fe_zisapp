@@ -1,19 +1,26 @@
 <template>
   <div>
-    <Breadcrumbs title="Akad" />
+    <Breadcrumbs title="Muzaki" />
     <!-- Container-fluid starts-->
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <h5>Master Data Akad</h5>
+              <h5>Data Muzaki</h5>
               <span
                 >lorem ipsum dolor sit amet, consectetur adipisicing elit</span
               >
             </div>
             <div class="card-body">
               <!-- TAMBAHIN KONTENYA DISINI -->
+              <data-table
+                :items="data"
+                :headers="headers"
+                @add="$router.push({ path: '/main/muzaki/add' })"
+                @edit="$router.push({ path: '/main/muzaki/edit' })"
+                @delete="onDelete"
+              />
             </div>
           </div>
         </div>
@@ -26,8 +33,34 @@
 <script>
 export default {
   data: () => {
-    return {};
+    return {
+      headers: [
+        { text: "NO", value: "id" },
+        { text: "NPWP", value: "id" },
+      ],
+      data: [],
+    };
   },
-  methods: {},
+  created() {
+    this.getData();
+  },
+  methods: {
+    getData() {},
+
+    onDelete(data) {
+      this.$swal({
+        text: this.$t("Delete Message", { who: "" }),
+        showCancelButton: true,
+        confirmButtonText: "Hapus",
+        confirmButtonColor: "#4466f2",
+        cancelButtonText: "Batal",
+        cancelButtonColor: "#efefef",
+        reverseButtons: true,
+      }).then(({ value }) => {
+        if (value) {
+        }
+      });
+    },
+  },
 };
 </script>

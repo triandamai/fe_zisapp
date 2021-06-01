@@ -33,12 +33,12 @@ const routes = [
     path: "/main",
     component: () => import("../components/body"),
     meta: {
-      reqiresAuth: true
+      reqiresAuth: true,
     },
     children: [
       {
         path: "",
-        redirect: "dashboard"
+        redirect: "dashboard",
       },
       {
         path: "dashboard",
@@ -46,32 +46,56 @@ const routes = [
         component: () => import("@/pages/dashboard/dashboard.vue"),
         meta: {
           title: "Default Dashboard | Endless - Premium Admin Template",
-          reqiresAuth: true
-        }
+          reqiresAuth: true,
+        },
       },
       {
         path: "muzaki",
         name: "muzaki",
         component: () => import("@/pages/muzaki/datamuzaki.vue"),
         meta: {
-          title: "Data Muzaki"
-        }
+          title: "Data Muzaki",
+        },
       },
       {
         path: "muzaki/add",
         name: "addmuzaki",
         component: () => import("@/pages/muzaki/addmuzaki.vue"),
         meta: {
-          title: "Data Muzaki"
-        }
+          title: "Tambah Muzaki",
+        },
       },
       {
         path: "muzaki/edit",
         name: "editmuzaki",
         component: () => import("@/pages/muzaki/editmuzaki.vue"),
         meta: {
-          title: "Data Muzaki"
-        }
+          title: "Edit Muzaki",
+        },
+      },
+      {
+        path: "mustahik",
+        name: "mustahik",
+        component: () => import("@/pages/mustahik/datamustahik.vue"),
+        meta: {
+          title: "Data Mustahik",
+        },
+      },
+      {
+        path: "mustahik/add",
+        name: "addmustahik",
+        component: () => import("@/pages/mustahik/addmustahik.vue"),
+        meta: {
+          title: "Tambah Mustahik",
+        },
+      },
+      {
+        path: "mustahik/edit",
+        name: "editmustahik",
+        component: () => import("@/pages/mustahik/editmustahik.vue"),
+        meta: {
+          title: "Edit Mustahik",
+        },
       },
 
       /**
@@ -82,32 +106,32 @@ const routes = [
         name: "akad",
         component: () => import("@/pages/akad/akad.vue"),
         meta: {
-          title: "akad"
-        }
+          title: "akad",
+        },
       },
       {
         path: "akad/add",
         name: "addakad",
         component: () => import("@/pages/akad/addakad.vue"),
         meta: {
-          title: "akad"
-        }
+          title: "akad",
+        },
       },
       {
         path: "akad/edit/:id",
         name: "editakad",
         component: () => import("@/pages/akad/editakad.vue"),
         meta: {
-          title: "akad"
-        }
-      }
-    ]
+          title: "akad",
+        },
+      },
+    ],
   },
   {
     path: "/login",
     name: "login",
-    component: () => import("@/pages/auth/login.vue")
-  }
+    component: () => import("@/pages/auth/login.vue"),
+  },
 ];
 
 /**
@@ -121,7 +145,7 @@ const router = new Router({
   linkActiveClass: "active",
   scrollBehavior() {
     return { x: 0, y: 0 };
-  }
+  },
 });
 
 /**
