@@ -1,56 +1,31 @@
 <template>
   <div>
-    <Breadcrumbs main="Form Controls" title="Validation Forms" />
+    <Breadcrumbs main="Master" title="Data Muzaki" />
     <!-- Container-fluid starts-->
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
           <px-card :actions="false">
-            <div slot="headerCustom">
-              <h5>Custom styles</h5>
-              <span
-                >For custom Bootstrap form validation messages, you’ll need to
-                add the <code class="text-danger">novalidate</code> boolean
-                attribute to your <code class="text-danger">&lt;form&gt;</code>.
-                This disables the browser default feedback tooltips, but still
-                provides access to the form validation APIs in JavaScript. Try
-                to submit the form below; our JavaScript will intercept the
-                submit button and relay feedback to you.</span
-              ><span
-                >When attempting to submit, you’ll see the
-                <code class="text-danger">:invalid </code> and
-                <code class="text-danger">:valid </code> styles applied to your
-                form controls.</span
-              >
-            </div>
             <div slot="with-padding">
-              <b-form class="needs-validation" @submit="onCustomStyleSubmit">
+              <b-form class="needs-validation" @submit="onsubmit">
                 <div class="form-row">
                   <div class="col-md-4 mb-3">
                     <label for="c_form_first_name">First name</label>
                     <b-form-input
                       type="text"
                       id="c_form_first_name"
-                      v-model="c_form.first_name"
-                      :state="c_form_result.first_name"
                       placeholder="First name"
                     ></b-form-input>
-                    <b-form-valid-feedback :state="c_form_result.first_name"
-                      >Lock Good</b-form-valid-feedback
-                    >
+                    <b-form-valid-feedback>Lock Good</b-form-valid-feedback>
                   </div>
                   <div class="col-md-4 mb-3">
                     <label for="c_form_last_name">Last name</label>
                     <b-form-input
                       type="text"
                       id="c_form_last_name"
-                      v-model="c_form.last_name"
-                      :state="c_form_result.last_name"
                       placeholder="Last name"
                     ></b-form-input>
-                    <b-form-valid-feedback :state="c_form_result.last_name"
-                      >Lock Good</b-form-valid-feedback
-                    >
+                    <b-form-valid-feedback>Lock Good</b-form-valid-feedback>
                   </div>
                   <div class="col-md-4 mb-3">
                     <label for="c_form_username">Username</label>
@@ -58,12 +33,10 @@
                       <b-form-input
                         type="text"
                         id="c_form_username"
-                        v-model="c_form.username"
-                        :state="c_form_result.username"
                         placeholder="Username"
                       ></b-form-input>
                     </b-input-group>
-                    <b-form-invalid-feedback :state="c_form_result.username"
+                    <b-form-invalid-feedback
                       >Please choose a unique and valid
                       username.</b-form-invalid-feedback
                     >
@@ -75,11 +48,9 @@
                     <b-form-input
                       type="text"
                       id="c_form_city"
-                      v-model="c_form.city"
-                      :state="c_form_result.city"
                       placeholder="City"
                     ></b-form-input>
-                    <b-form-invalid-feedback :state="c_form_result.city"
+                    <b-form-invalid-feedback
                       >Please provide a valid city.</b-form-invalid-feedback
                     >
                   </div>
@@ -88,11 +59,9 @@
                     <b-form-input
                       type="text"
                       id="c_form_state"
-                      v-model="c_form.state"
-                      :state="c_form_result.state"
                       placeholder="State"
                     ></b-form-input>
-                    <b-form-invalid-feedback :state="c_form_result.state"
+                    <b-form-invalid-feedback
                       >Please provide a valid state.</b-form-invalid-feedback
                     >
                   </div>
@@ -101,11 +70,9 @@
                     <b-form-input
                       type="text"
                       id="c_form_zipcode"
-                      v-model="c_form.zip"
-                      :state="c_form_result.zip"
                       placeholder="Zip"
                     ></b-form-input>
-                    <b-form-invalid-feedback :state="c_form_result.zip"
+                    <b-form-invalid-feedback
                       >Please provide a valid zip.</b-form-invalid-feedback
                     >
                   </div>
@@ -117,5 +84,13 @@
         </div>
       </div>
     </div>
-  </div></template
->
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    onsubmit() {},
+  },
+};
+</script>

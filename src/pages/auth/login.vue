@@ -17,7 +17,7 @@
                   class="img-fluid for-light"
                   width="40px"
                   src="../../assets/images/logo/login.png"
-                  alt="looginpage" />
+                  alt="looginpage"/>
                 <img
                   class="img-fluid for-dark"
                   width="40px"
@@ -146,7 +146,7 @@ export default {
   },
   methods: {
     // show/hide password
-    showPassword: function () {
+    showPassword: function() {
       if (this.type === "password") {
         this.type = "text";
       } else {
@@ -154,7 +154,7 @@ export default {
       }
     },
     // Firebase login
-    signUp: function () {
+    signUp: function() {
       this.submitted = true;
       if (this.email != "" && this.password != "") {
         this.$store

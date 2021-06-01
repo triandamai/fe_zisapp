@@ -38,7 +38,6 @@
       </div>
       <Customizer />
     </div>
-    <form-akad :show="formakad" @close="hide" @submit="onSubmitAkad" />
   </div>
 </template>
 
@@ -72,7 +71,6 @@ export default {
       layout: (state) => state.layout.layout,
       togglesidebar: (state) => state.menu.togglesidebar,
       body: (state) => state.body,
-      formakad: (state) => state.formakad,
     }),
   },
   created() {
@@ -98,7 +96,7 @@ export default {
         });
       });
     },
-    sidebar_toggle_var: function () {
+    sidebar_toggle_var: function() {
       this.resized =
         this.width <= 991 ? !this.sidebar_toggle_var : this.sidebar_toggle_var;
     },
@@ -116,15 +114,8 @@ export default {
     handleResize() {
       this.$store.dispatch("menu/resizetoggle");
     },
-    onSubmitAkad() {},
-    onSubmitDeposito() {},
-    onSubmitJenistransaksi() {},
-    onSubmitPembiayaan() {},
-    onSubmitProduk() {},
-    onSubmitSimpanan() {},
   },
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

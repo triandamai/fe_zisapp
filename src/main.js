@@ -28,7 +28,7 @@ import "@babel/polyfill";
 import ApiService from "@/services/api.service";
 //
 import DataTable from "@/components/datatable.vue";
-import FormAkad from "@/components/form_akad.vue";
+import FormMuzaki from "@/components/form_muzaki.vue";
 
 import PxCard from "@/components/Pxcard.vue";
 import { Icon } from "leaflet";
@@ -43,7 +43,7 @@ import { defaultLocale, localeOptions } from "@/constants/config.js";
 const messages = { en: en, es: es, id: id };
 
 Vue.component("data-table", DataTable);
-Vue.component("form-akad", FormAkad);
+Vue.component("FormMuzaki", FormMuzaki);
 
 Vue.component("Breadcrumbs", Breadcrumbs);
 
@@ -60,15 +60,15 @@ ApiService.init();
 Vue.use(VueFeather);
 
 Vue.use(Toasted, {
-  iconPack: "fontawesome"
+  iconPack: "fontawesome",
 });
 Vue.use(Vue2Dragula);
 
 Vue.use(VueGoogleMaps, {
   load: {
     key: "API_KEY",
-    libraries: "places"
-  }
+    libraries: "places",
+  },
 });
 
 Vue.use(Notifications);
@@ -82,14 +82,14 @@ Vue.use(require("vue-chartist"));
 Vue.use(require("vue-moment"));
 Vue.use(VueMasonryPlugin);
 Vue.use(FunctionalCalendar, {
-  dayNames: ["M", "T", "W", "T", "F", "S", "S"]
+  dayNames: ["M", "T", "W", "T", "F", "S", "S"],
 });
 Vue.use(vueKanban);
 Vue.use(VueI18n);
 const locale =
   window.localStorage.getItem("currentLanguage") &&
   localeOptions.filter(
-    x => x.id === window.localStorage.getItem("currentLanguage")
+    (x) => x.id === window.localStorage.getItem("currentLanguage")
   ).length > 0
     ? window.localStorage.getItem("currentLanguage")
     : defaultLocale;
@@ -97,7 +97,7 @@ const locale =
 const i18n = new VueI18n({
   locale: locale,
   fallbackLocale: "en",
-  messages: messages
+  messages: messages,
 });
 
 Vue.config.productionTip = false;
@@ -106,5 +106,5 @@ new Vue({
   router,
   store,
   vuetify,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount("#app");
