@@ -8,9 +8,6 @@
           <div class="card">
             <div class="card-header">
               <h5>Data Muzaki</h5>
-              <span
-                >lorem ipsum dolor sit amet, consectetur adipisicing elit</span
-              >
             </div>
             <div class="card-body">
               <!-- TAMBAHIN KONTENYA DISINI -->
