@@ -40,7 +40,7 @@
           margin: 0 auto;
         }
 
-        > div {
+        >div {
           height: 545px;
           z-index: 7;
           background-color: rgba(255, 255, 255, 0.75);
@@ -186,6 +186,7 @@
 }
 
 @media screen and (max-width: 1580px) and (min-width: 1200px) {
+
   .docs-buttons,
   .docs-toggles {
     flex: 0 0 100%;
@@ -238,7 +239,7 @@
     }
 
     .card-footer {
-      > div {
+      >div {
         h3 {
           font-size: 18px;
         }
@@ -305,6 +306,7 @@
           }
         }
       }
+
     }
 
     .user-image {
@@ -515,11 +517,10 @@
 @media only screen and (max-width: 1366px) {
   .left-header {
     padding: 0;
-    .horizontal-menu {
-      .mega-menu,
-      .level-menu {
-        .nav-link {
-          span {
+    .horizontal-menu{
+      .mega-menu, .level-menu{
+        .nav-link{
+          span{
             display: none;
           }
         }
@@ -558,7 +559,7 @@
   // alert page
   .alert-dismissible {
     strong {
-      & ~ p {
+      &~p {
         display: inline;
       }
     }
@@ -708,6 +709,7 @@
     .chart-container {
       height: 300px;
     }
+
   }
 
   .speed-chart {
@@ -874,6 +876,7 @@
           }
         }
       }
+
     }
 
     .user-image {
@@ -1035,31 +1038,31 @@
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .left-header .mega-menu-container .mega-box .svg-icon ~ div h6 {
+  .left-header .mega-menu-container .mega-box .svg-icon~div h6 {
     display: none;
   }
 
   .translate_wrapper {
-    .language-button {
+    .language-button{
       padding: 3px !important;
     }
   }
 
   .left-header {
     .mega-menu-container {
-      .mega-box {
-        .link-section {
-          ul {
+      .mega-box{
+        .link-section{
+          ul{
             display: none;
-            transition: all 0.3s ease;
-            &.open {
+            transition: all .3s ease;
+            &.open{
               display: block;
-              transition: all 0.3s ease;
+              transition: all .3s ease;
             }
           }
-          &.active {
-            h6 {
-              &:before {
+          &.active{
+            h6{
+              &:before{
                 content: "\f107";
                 transition: content 0.3s ease;
               }
@@ -1068,8 +1071,7 @@
         }
       }
     }
-    .level-menu,
-    .mega-menu {
+    .level-menu , .mega-menu{
       .nav-link {
         i {
           margin: 0;
@@ -1087,40 +1089,40 @@
 
   .login-card {
     // background: transparent;
-    .login-main {
+    .login-main{
       margin-top: 70px;
       .tabs {
-        .col-auto {
+        .col-auto{
           left: 0;
           top: -40px;
-          .nav {
+          .nav{
             flex-direction: row !important;
             .nav-item {
-              .nav-link {
-                &:hover {
-                  &:after {
+              .nav-link{
+                &:hover{
+                  &:after{
                     opacity: 1;
                     top: -1px;
                     transform: scale(1) rotate(90deg);
-                    transition: all 0.3s ease;
+                    transition: all .3s ease;
                     left: 50%;
                   }
-                  span {
+                  span{
                     opacity: 1;
                     right: 0;
                     top: -33px;
                     transform: scale(1);
-                    transition: all 0.3s ease;
+                    transition: all .3s ease;
                   }
                 }
-                &.active {
+                &.active{
                   border-bottom: 2px solid var(--theme-deafult);
                   border-right: none;
-                  img {
+                  img{
                     filter: grayscale(0);
                   }
                 }
-                img {
+                img{
                   filter: grayscale(1);
                 }
               }
@@ -1152,9 +1154,11 @@
     }
   }
 
-  .link-section > div {
+
+
+  .link-section>div {
     &.active {
-      > h6 {
+      >h6 {
         &:before {
           content: "\f107";
           transition: content 0.3s ease;
@@ -1162,7 +1166,7 @@
       }
     }
 
-    > h6 {
+    >h6 {
       position: relative;
 
       &:before {
@@ -1199,7 +1203,7 @@
       .mega-box {
         flex-basis: auto;
 
-        & + .mega-box {
+        &+.mega-box {
           border-left: 0px;
           padding-left: 15px;
         }
@@ -1239,7 +1243,7 @@
           position: unset;
           padding: 0;
 
-          > ul {
+          >ul {
             li {
               .submenu {
                 li {
@@ -1263,7 +1267,7 @@
     }
   }
 
-  .sidebar-main {
+  .sidebar-main{
     margin-top: 20px;
   }
 
@@ -1387,7 +1391,7 @@
   .typography {
     .row {
       div {
-        & + div {
+        &+div {
           margin-top: 30px;
         }
       }
@@ -1397,8 +1401,8 @@
   .listing {
     .card-body {
       .row {
-        > div {
-          & + div {
+        >div {
+          &+div {
             margin-top: 30px;
           }
         }
@@ -1416,7 +1420,7 @@
     }
 
     .docs-toggles {
-      > .dropdown {
+      >.dropdown {
         margin-bottom: 0;
       }
     }
@@ -1452,7 +1456,7 @@
     &.dataTables_wrapper {
       div {
         &.dataTables_paginate {
-          & ~ .dataTables_filter {
+          &~.dataTables_filter {
             display: block;
             width: 100%;
             margin-top: 20px;
@@ -1478,7 +1482,7 @@
   .custom-card {
     .card-profile {
       .card-footer {
-        > div {
+        >div {
           h3 {
             font-size: 18px;
           }
@@ -1680,7 +1684,9 @@
           height: auto;
 
           .chat-menu-icons li a i {
+
             font-size: 19px;
+
           }
         }
 
@@ -1718,7 +1724,7 @@
 
     .chat-history {
       .call-content {
-        > div {
+        >div {
           padding-top: 70px;
         }
       }
@@ -1760,7 +1766,7 @@
 
     .row {
       .col-xl-3 {
-        & + .col-xl-3 {
+        &+.col-xl-3 {
           padding-right: 15px;
         }
       }
@@ -1881,7 +1887,7 @@
     }
   }
 
-  .tab-content .row .col-xl-4 + .col-xl-4 .project-box {
+  .tab-content .row .col-xl-4+.col-xl-4 .project-box {
     margin-top: 1.5rem !important;
   }
 
@@ -1952,6 +1958,7 @@
         max-height: calc(100vh - 84px);
       }
     }
+
   }
 
   .vertical-mobile-sidebar {
@@ -1971,6 +1978,7 @@
 
   #aniimated-thumbnials {
     figure {
+
       &:nth-child(12),
       &:nth-child(11),
       &:nth-child(10),
@@ -1987,6 +1995,7 @@
   // datatable css
   table {
     &.dataTable {
+
       &.fixedHeader-locked,
       &.fixedHeader-floating {
         left: 0 !important;
@@ -2093,7 +2102,7 @@
 
             .sidebar-main {
               .sidebar-links {
-                height: calc(100vh - 95px);
+                height: calc(100vh - 95px)
               }
             }
 
@@ -2119,7 +2128,7 @@
     .page-header {
       .header-wrapper {
         margin: 0;
-        padding: 5px 30px;
+        padding: 12px 30px;
 
         .nav-right {
           position: unset;
@@ -2128,9 +2137,10 @@
           .notification {
             top: 10px;
           }
+
         }
 
-        > .mobile-toggle {
+        >.mobile-toggle {
           cursor: pointer;
           display: flex;
           align-items: center;
@@ -2152,6 +2162,7 @@
   }
 
   .page-body-wrapper {
+
     .page-body,
     footer {
       margin-left: 0 !important;
@@ -2186,7 +2197,7 @@
   .crm-activity {
     > {
       li {
-        + li {
+        +li {
           margin-top: 10px;
           padding-top: 10px;
         }
@@ -2240,6 +2251,7 @@
   }
 
   .timeline-content {
+
     p,
     .comments-box {
       margin-top: 20px;
@@ -2266,14 +2278,14 @@
   }
 
   .details-about {
-    + .details-about {
+    +.details-about {
       margin-top: 20px;
     }
   }
 
   .activity-log {
     .my-activity {
-      + .my-activity {
+      +.my-activity {
         margin-top: 20px;
       }
     }
@@ -2553,7 +2565,7 @@
     .basic-calendar {
       .external-events {
         .fc-event {
-          & + .fc-event {
+          &+.fc-event {
             margin-top: 10px;
           }
         }
@@ -2564,7 +2576,7 @@
   .owl-theme {
     .owl-nav {
       &.disabled {
-        & + .owl-dots {
+        &+.owl-dots {
           margin-bottom: -10px;
           margin-top: 15px;
         }
@@ -2696,7 +2708,7 @@
     .media {
       .media-body {
         i {
-          float: none !important;
+          float: none ! important;
         }
       }
     }
@@ -2760,7 +2772,7 @@
   }
 
   .tab-content {
-    ~ .nav-tabs {
+    ~.nav-tabs {
       &.border-tab {
         margin-top: 20px;
       }
@@ -2781,14 +2793,14 @@
   // search page
   .search-page {
     .info-block {
-      + .info-block {
+      +.info-block {
         padding-top: 20px;
         margin-top: 20px;
       }
     }
 
     #video-links {
-      .embed-responsive + .embed-responsive {
+      .embed-responsive+.embed-responsive {
         margin-top: 20px;
       }
     }
@@ -2802,7 +2814,7 @@
     margin-bottom: -20px;
 
     a {
-      > div {
+      >div {
         margin-bottom: 20px;
       }
     }
@@ -2901,7 +2913,7 @@
 
   // summer-note page
   .click2edit {
-    & ~ .note-editor {
+    &~.note-editor {
       &.note-frame {
         margin-bottom: 20px;
       }
@@ -2926,6 +2938,7 @@
           .animated-modal-md-mb {
             margin-bottom: 20px !important;
           }
+
         }
       }
     }
@@ -2996,7 +3009,7 @@
     .form-group:not(.form-control-search) {
       width: 100%;
 
-      + .form-group {
+      +.form-group {
         margin-top: 10px;
       }
 
@@ -3056,7 +3069,7 @@
             padding-right: 25px;
           }
 
-          + li {
+          +li {
             padding-left: 25px;
           }
         }
@@ -3065,7 +3078,7 @@
   }
 
   .footer-copyright {
-    ~ div {
+    ~div {
       text-align: center;
 
       p {
@@ -3116,6 +3129,7 @@
   // icon-compact layout page
   .my-gallery {
     figure {
+
       &:nth-child(9),
       &:nth-child(10) {
         margin-bottom: 20px;
@@ -3181,7 +3195,7 @@
   .form-builder-2-header {
     flex-wrap: wrap;
 
-    > div {
+    >div {
       width: 100%;
       margin-top: 10px;
 
@@ -3235,7 +3249,7 @@
         .ge-tools-drawer {
           margin: 10px 0 0 10px;
 
-          > a {
+          >a {
             padding: 0 5px;
           }
         }
@@ -3270,10 +3284,10 @@
         td {
           min-width: 284px;
 
-          & + td {
+          &+td {
             min-width: unset;
 
-            & + td {
+            &+td {
               min-width: 100px;
             }
           }
@@ -3411,6 +3425,7 @@
     }
 
     .fc-events-container {
+
       h6,
       .checkbox {
         text-align: right;
@@ -3461,17 +3476,17 @@
       }
 
       .fc-toolbar {
-        > div {
+        >div {
           display: block !important;
           float: none !important;
         }
 
-        > * {
+        >* {
           :first-child {
             font-size: 18px;
           }
 
-          > * {
+          >* {
             float: none !important;
           }
         }
@@ -3626,6 +3641,7 @@
     }
   }
 
+
   //blog
   .blog-single {
     .comment-box {
@@ -3742,7 +3758,7 @@
     .icon-popup {
       display: block;
 
-      > .icon-last {
+      >.icon-last {
         display: block;
         margin-top: 15px;
       }
@@ -3970,6 +3986,7 @@
 
   // gallery page
   .lg-outer {
+
     .lg-actions .lg-next,
     .lg-actions .lg-prev {
       top: 48%;
@@ -4117,16 +4134,16 @@
 
   .login-card {
     .login-main {
-      .card {
+      .card{
         box-shadow: none;
         margin: 0;
         padding: 0;
         .tabs {
           .col-auto {
             top: -60px;
-            ul {
+            ul{
               display: flex;
-              li {
+              li{
                 width: auto;
               }
             }
@@ -4154,7 +4171,7 @@
       }
     }
 
-    > div {
+    >div {
       width: 100%;
       text-align: center;
       padding: 15px;
@@ -4199,13 +4216,14 @@
       .btn {
         width: 100%;
 
-        + .btn {
+        +.btn {
           margin-left: 0;
           margin-top: 5px;
         }
       }
     }
   }
+
 
   .bookmark {
     ul {
@@ -4217,14 +4235,14 @@
           }
         }
 
-        & + li {
+        &+li {
           margin-left: 5px;
         }
       }
     }
   }
 
-  .page-wrapper .page-header .header-wrapper .nav-right > ul > li {
+  .page-wrapper .page-header .header-wrapper .nav-right>ul>li {
     padding: 4px;
   }
 
@@ -4254,6 +4272,7 @@
   .page-header {
     .header-wrapper {
       .nav-right {
+
         .cart-box,
         .notification-box {
           .badge {
@@ -4296,7 +4315,7 @@
 
   .page-wrapper {
     .page-body-wrapper {
-      .page-title > .row {
+      .page-title>.row {
         .col-6 {
           &:first-child {
             display: block;
@@ -4373,16 +4392,17 @@
 
     .page-header {
       .header-wrapper {
-        padding: 5px 15px !important;
+        padding: 12px 15px !important;
 
         .nav-right {
-          > ul {
+          >ul {
             top: 58px;
 
             .search-form {
               i {
                 display: none;
               }
+
             }
           }
 
@@ -4396,7 +4416,7 @@
             }
           }
 
-          > ul {
+          >ul {
             li {
               margin-right: 1px;
 
@@ -4422,6 +4442,7 @@
 
           .notification-dropdown {
             &.onhover-show-div {
+
               &:before,
               &:after {
                 left: 24px !important;
@@ -4485,6 +4506,7 @@
   .m-r-30 {
     margin-right: 15px;
   }
+
 
   // general widget page css
   .mobile-clock-widget {
@@ -4639,6 +4661,7 @@
 
   #aniimated-thumbnials {
     figure {
+
       &:nth-child(12),
       &:nth-child(11),
       &:nth-child(10),
@@ -4770,6 +4793,7 @@
   }
 
   .timeline-content {
+
     p,
     .comments-box {
       margin-top: 15px;
@@ -4829,7 +4853,7 @@
     }
   }
 
-  .details-about + .details-about {
+  .details-about+.details-about {
     margin-top: 15px;
   }
 
@@ -4847,13 +4871,14 @@
           width: 18px;
           height: 18px;
         }
+
       }
     }
   }
 
   .activity-log {
     .my-activity {
-      + .my-activity {
+      +.my-activity {
         margin-top: 15px;
       }
     }
@@ -5043,7 +5068,7 @@
   }
 
   .tab-content {
-    ~ .nav-tabs {
+    ~.nav-tabs {
       &.border-tab {
         margin-top: 10px;
       }
@@ -5154,11 +5179,11 @@
 
   div {
     &.table-responsive {
-      > div {
+      >div {
         &.dataTables_wrapper {
-          > div {
+          >div {
             &.row {
-              > div {
+              >div {
                 &[class^="col-"] {
                   &:last-child {
                     padding-left: 0 !important;
@@ -5188,6 +5213,7 @@
 
       table {
         &.dataTable {
+
           th,
           td {
             padding: 0.5rem;
@@ -5323,6 +5349,7 @@
     }
 
     .blog-details {
+
       p,
       .single-blog-content-top {
         margin-top: 15px;
@@ -5336,10 +5363,10 @@
         margin-top: 15px;
 
         li {
-          & + li {
+          &+li {
             padding-left: 20px;
 
-            > span {
+            >span {
               display: none;
             }
           }
@@ -5382,7 +5409,7 @@
   }
 
   .gallery {
-    > a {
+    >a {
       margin-bottom: 15px;
       text-align: center;
     }
@@ -5406,6 +5433,7 @@
     .page-body-wrapper {
       .default-according {
         .card {
+
           .card-header,
           .card-body,
           .card-footer {
@@ -5450,9 +5478,22 @@
   }
 
   /* alert responsive css start here */
-  $alert-name: primary, secondary, success, danger, warning, info, light, dark;
-  $alert-color: var(--theme-deafult), $secondary-color, $success-color,
-    $danger-color, $warning-color, $info-color, $light-color, $dark-color;
+  $alert-name: primary,
+  secondary,
+  success,
+  danger,
+  warning,
+  info,
+  light,
+  dark;
+  $alert-color: var(--theme-deafult),
+  $secondary-color,
+  $success-color,
+  $danger-color,
+  $warning-color,
+  $info-color,
+  $light-color,
+  $dark-color;
 
   @each $var in $alert-name {
     $i: index($alert-name, $var);
@@ -5527,7 +5568,7 @@
   //user card
   .custom-card {
     .card-footer {
-      > div {
+      >div {
         h6 {
           font-size: 14px;
           font-weight: 600;
@@ -5549,8 +5590,9 @@
     }
 
     a.fc-more {
-      font-size: 0.7em;
+      font-size: .70em;
     }
+
   }
 
   // megaoption page responsive scss
@@ -5791,6 +5833,7 @@
         }
       }
     }
+
   }
 
   // tilt
@@ -5880,7 +5923,7 @@
 
   // summer-note page
   .click2edit {
-    & ~ .note-editor {
+    &~.note-editor {
       &.note-frame {
         margin-bottom: 15px;
       }
@@ -5891,7 +5934,7 @@
   .chat-box {
     .chat-history {
       .call-content {
-        > div {
+        >div {
           padding-top: 60px;
         }
       }
@@ -5943,7 +5986,7 @@
   // gallery-with-description page
   .gallery-with-description {
     a {
-      > div {
+      >div {
         margin-bottom: 15px;
       }
     }
@@ -6000,6 +6043,7 @@
 
   .translate_wrapper.active {
     .more_lang {
+
       &:before,
       &:after {
         display: none;
@@ -6037,6 +6081,7 @@
       .nav-right {
         &.right-header {
           ul {
+
             &.profile-dropdown,
             &.chat-dropdown,
             &.notification-dropdown {
@@ -6079,7 +6124,7 @@
   }
 
   .login-card .login-main .tabs .col-auto .nav .nav-item .nav-link span,
-  .login-card .login-main .tabs .col-auto .nav .nav-item .nav-link:after {
+  .login-card .login-main .tabs .col-auto .nav .nav-item .nav-link:after{
     display: none;
   }
 
@@ -6093,7 +6138,7 @@
 
   .pagination-lg {
     .page-link {
-      font-size: 1rem;
+      font-size: 1.0rem;
     }
   }
 
@@ -6107,13 +6152,14 @@
     }
   }
 
+
   .left-header {
     .level-menu {
       .header-level-menu {
         width: 140px;
         padding: 0.7rem 0;
 
-        > li > .header-level-sub-menu {
+        >li>.header-level-sub-menu {
           padding: 0.7rem 0;
           width: 120px;
           left: 140px;
@@ -6128,6 +6174,7 @@
 
   .box-layout {
     &.page-wrapper {
+
       .set-col-6,
       .set-col-3,
       .set-col-7,
@@ -6140,7 +6187,7 @@
 
   .chart_data_right {
     .knob-block {
-      > div:not(.chart-clock-main) canvas {
+      >div:not(.chart-clock-main) canvas {
         width: 70px !important;
         height: 70px !important;
       }
@@ -6180,7 +6227,7 @@
       }
     }
 
-    > div:not(.chart-clock-main) {
+    >div:not(.chart-clock-main) {
       canvas {
         width: 245px !important;
         height: 245px !important;
@@ -6193,7 +6240,7 @@
       .btn {
         width: 100%;
 
-        & + .btn {
+        &+.btn {
           margin-top: 10px;
         }
       }
@@ -6256,7 +6303,7 @@
     padding: 0;
 
     .card-footer {
-      > div {
+      >div {
         h3 {
           font-size: 20px;
         }
@@ -6295,8 +6342,8 @@
         }
       }
 
-      > span {
-        & + span {
+      >span {
+        &+span {
           display: none;
         }
       }
@@ -6508,8 +6555,8 @@
     }
 
     span {
-      + span {
-        + span {
+      +span {
+        +span {
           padding: 15px;
         }
       }
@@ -6640,7 +6687,7 @@
     }
 
     .card-footer {
-      > div {
+      >div {
         h6 {
           font-size: 12px;
         }
@@ -6834,6 +6881,7 @@
       .title {
         line-height: 1;
       }
+
     }
   }
 
@@ -6915,7 +6963,7 @@
   // calender page
   .calendar-wrap {
     a.fc-more {
-      font-size: 0.59em;
+      font-size: .59em;
     }
 
     .fc {

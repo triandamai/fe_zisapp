@@ -7,7 +7,7 @@
         @click="$emit('add', true)"
         outlined
         small
-        >{{ $t("Add") }}</v-btn
+        >{{ "tambah" }}</v-btn
       >
       <v-spacer></v-spacer>
       <v-text-field

@@ -28,7 +28,8 @@ import "@babel/polyfill";
 import ApiService from "@/services/api.service";
 //
 import DataTable from "@/components/datatable.vue";
-import FormMuzaki from "@/components/form_muzaki.vue";
+import FormMuzaki from "@/components/form-muzaki.vue";
+import FormMustahik from "@/components/form-mustahik.vue";
 
 import PxCard from "@/components/Pxcard.vue";
 import { Icon } from "leaflet";
@@ -44,6 +45,7 @@ const messages = { en: en, es: es, id: id };
 
 Vue.component("data-table", DataTable);
 Vue.component("FormMuzaki", FormMuzaki);
+Vue.component("FormMustahik", FormMustahik);
 
 Vue.component("Breadcrumbs", Breadcrumbs);
 

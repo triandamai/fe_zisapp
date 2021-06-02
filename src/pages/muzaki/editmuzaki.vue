@@ -1,19 +1,17 @@
 <template>
   <div>
-    <Breadcrumbs title="Akad" />
+    <Breadcrumbs title="Muzaki" />
     <!-- Container-fluid starts-->
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <h5>Master Data Akad</h5>
-              <span
-                >lorem ipsum dolor sit amet, consectetur adipisicing elit</span
-              >
+              <h5>Edit Muzaki</h5>
             </div>
             <div class="card-body">
               <!-- TAMBAHIN KONTENYA DISINI -->
+              <FormMuzaki></FormMuzaki>
             </div>
           </div>
         </div>
