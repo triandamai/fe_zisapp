@@ -8,30 +8,18 @@
               <div class="form-row">
                 <div class="col-md-4 mb-">
                   <label for="c_form_first_name">NPWZ</label>
-                  <b-form-input
-                    type="text"
-                    id="c_form_npwp"
-                    placeholder="NPWP"
-                  ></b-form-input>
+                  <b-form-input type="text" placeholder="NPWP"></b-form-input>
                 </div>
                 <div class="col-md-6 mb-">
                   <label for="c_form_last_name">NPWP</label>
-                  <b-form-input
-                    type="text"
-                    id="c_form_last_name"
-                    placeholder="NPWP"
-                  ></b-form-input>
+                  <b-form-input type="text" placeholder="NPWP"></b-form-input>
                   <b-form-valid-feedback>Lock Good</b-form-valid-feedback>
                 </div>
               </div>
               <div class="form-row">
                 <div class="col-md-4 mb-3">
                   <label for="c_form_city">NIK</label>
-                  <b-form-input
-                    type="text"
-                    id="c_form_nik"
-                    placeholder="NIK"
-                  ></b-form-input>
+                  <b-form-input type="text" placeholder="NIK"></b-form-input>
                 </div>
                 <div class="col-md-4 mb-3">
                   <label for="c_form_nama">Nama</label>
@@ -55,11 +43,7 @@
               <div class="form-row">
                 <div class="col-md-10 mb-3">
                   <label for="c_form_alamat">Alamat</label>
-                  <b-form-input
-                    type="text"
-                    id="c_form_alamat"
-                    placeholder="Alamat"
-                  ></b-form-input>
+                  <b-form-input type="text" placeholder="Alamat"></b-form-input>
                 </div>
               </div>
               <b-button type="submit" variant="primary">Simpan</b-button>
@@ -80,6 +64,7 @@ export default {
         { value: null, text: "Pilih" },
         { value: "1", text: "Laki-laki" },
         { value: "2", text: "Perempuan" },
+        { value: "AKSI", text: "action" },
       ],
     };
   },
