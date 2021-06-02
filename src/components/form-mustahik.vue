@@ -6,75 +6,66 @@
           <div slot="with-padding">
             <b-form class="needs-validation" @submit="onsubmit">
               <div class="form-row">
-                <div class="col-md-4 mb-3">
-                  <label for="c_form_first_name">First name</label>
+                <div class="col-md-4 mb-1">
+                  <label for="c_form_kode">Kode </label>
                   <b-form-input
                     type="text"
-                    id="c_form_first_name"
-                    placeholder="First name"
+                    placeholder="Kode Mustahik"
                   ></b-form-input>
+                </div>
+                <div class="col-md-6 mb-">
+                  <label for="c_form_nama">Nama</label>
+                  <b-form-input type="text" placeholder="Nama"></b-form-input>
                   <b-form-valid-feedback>Lock Good</b-form-valid-feedback>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <label for="c_form_last_name">Last name</label>
-                  <b-form-input
-                    type="text"
-                    id="c_form_last_name"
-                    placeholder="Last name"
-                  ></b-form-input>
-                  <b-form-valid-feedback>Lock Good</b-form-valid-feedback>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <label for="c_form_username">Username</label>
-                  <b-input-group prepend="@">
-                    <b-form-input
-                      type="text"
-                      id="c_form_username"
-                      placeholder="Username"
-                    ></b-form-input>
-                  </b-input-group>
-                  <b-form-invalid-feedback
-                    >Please choose a unique and valid
-                    username.</b-form-invalid-feedback
-                  >
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-10 mb-3">
+                  <label for="c_form_alamat">Alamat</label>
+                  <b-form-input type="text" placeholder="Alamat"></b-form-input>
                 </div>
               </div>
               <div class="form-row">
-                <div class="col-md-6 mb-3">
-                  <label for="c_form_city">City</label>
+                <div class="col-md-4 mb-3">
+                  <label for="c_form_telepon">Telepon</label>
                   <b-form-input
                     type="text"
-                    id="c_form_city"
-                    placeholder="City"
+                    placeholder="Telepon"
                   ></b-form-input>
-                  <b-form-invalid-feedback
-                    >Please provide a valid city.</b-form-invalid-feedback
-                  >
                 </div>
-                <div class="col-md-3 mb-3">
-                  <label for="c_form_state">State</label>
-                  <b-form-input
-                    type="text"
-                    id="c_form_state"
-                    placeholder="State"
-                  ></b-form-input>
-                  <b-form-invalid-feedback
-                    >Please provide a valid state.</b-form-invalid-feedback
-                  >
+                <div class="col-md-2 mb-3">
+                  <label for="c_form_kategori">Kategori</label>
+                  <b-form-select
+                    v-model="select"
+                    :options="kategori"
+                  ></b-form-select>
                 </div>
-                <div class="col-md-3 mb-3">
-                  <label for="c_form_zipcode">Zip</label>
-                  <b-form-input
-                    type="text"
-                    id="c_form_zipcode"
-                    placeholder="Zip"
-                  ></b-form-input>
-                  <b-form-invalid-feedback
-                    >Please provide a valid zip.</b-form-invalid-feedback
-                  >
+                <div class="col-md-2 mb-3">
+                  <label for="c_form_kategori">Aktif</label>
+                  <b-form-select
+                    v-model="select"
+                    :options="aktif"
+                  ></b-form-select>
                 </div>
               </div>
-              <b-button type="submit" variant="primary">Submit Form</b-button>
+              <div class="form-row">
+                <div class="col-md-4 mb-1">
+                  <label for="c_form_nomorkantor">Nomor Kantor </label>
+                  <b-form-input
+                    type="text"
+                    placeholder="Nomor Kantor"
+                  ></b-form-input>
+                </div>
+                <div class="col-md-4 mb-1">
+                  <label for="c_form_kantorlayanan">Kantor Layanan </label>
+                  <b-form-input
+                    type="text"
+                    placeholder="Kantor Layanan"
+                  ></b-form-input>
+                </div>
+              </div>
+              <b-button type="submit" variant="primary">Simpan</b-button>
             </b-form>
           </div>
         </px-card>
@@ -85,6 +76,31 @@
 
 <script>
 export default {
+  data() {
+    return {
+      jeniskelamin: null,
+      jk: [
+        { value: null, text: "Pilih" },
+        { value: "1", text: "Laki-laki" },
+        { value: "2", text: "Perempuan" },
+        { value: "AKSI", text: "action" },
+      ],
+      kategori: null,
+      kategori: [
+        { value: null, text: "Pilih" },
+        { value: "1", text: "Individu" },
+        { value: "2", text: "Kelompok" },
+        { value: "AKSI", text: "action" },
+      ],
+      aktif: null,
+      aktif: [
+        { value: null, text: "Pilih" },
+        { value: "1", text: "Individu" },
+        { value: "2", text: "Kelompok" },
+        { value: "AKSI", text: "action" },
+      ],
+    };
+  },
   methods: {
     onsubmit() {},
   },
