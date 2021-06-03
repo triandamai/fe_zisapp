@@ -51,14 +51,14 @@
                   <label for="c_form_kategori">Kategori</label>
                   <b-form-select
                     v-model="select"
-                    :options="kategori"
+                    :options="ktg"
                   ></b-form-select>
                 </div>
                 <div class="col-md-2 mb-3">
                   <label for="c_form_kategori">Aktif</label>
                   <b-form-select
-                    v-model="select"
-                    :options="aktif"
+                    v-model="selectz"
+                    :options="akt"
                   ></b-form-select>
                 </div>
               </div>
@@ -80,21 +80,18 @@ export default {
         { value: null, text: "Pilih" },
         { value: "1", text: "Laki-laki" },
         { value: "2", text: "Perempuan" },
-        { value: "AKSI", text: "action" },
       ],
       kategori: null,
-      kategori: [
+      ktg: [
         { value: null, text: "Pilih" },
         { value: "1", text: "Individu" },
         { value: "2", text: "Kelompok" },
-        { value: "AKSI", text: "action" },
       ],
       aktif: null,
-      aktif: [
+      akt: [
         { value: null, text: "Pilih" },
         { value: "1", text: "Individu" },
         { value: "2", text: "Kelompok" },
-        { value: "AKSI", text: "action" },
       ],
     };
   },

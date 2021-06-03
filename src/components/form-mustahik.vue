@@ -83,21 +83,18 @@ export default {
         { value: null, text: "Pilih" },
         { value: "1", text: "Laki-laki" },
         { value: "2", text: "Perempuan" },
-        { value: "AKSI", text: "action" },
       ],
       kategori: null,
       kategori: [
         { value: null, text: "Pilih" },
         { value: "1", text: "Individu" },
         { value: "2", text: "Kelompok" },
-        { value: "AKSI", text: "action" },
       ],
       aktif: null,
       aktif: [
         { value: null, text: "Pilih" },
         { value: "1", text: "Individu" },
         { value: "2", text: "Kelompok" },
-        { value: "AKSI", text: "action" },
       ],
     };
   },
