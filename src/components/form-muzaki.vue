@@ -30,7 +30,10 @@
                 </div>
                 <div class="col-md-2 mb-3">
                   <label for="c_form_jeniskelamin">Jenis Kelamin</label>
-                  <b-form-select v-model="select" :options="jk"></b-form-select>
+                  <b-form-select
+                    v-model="jeniskelamin"
+                    :options="jk"
+                  ></b-form-select>
                 </div>
               </div>
               <div class="form-row">
@@ -50,16 +53,13 @@
                 <div class="col-md-2 mb-3">
                   <label for="c_form_kategori">Kategori</label>
                   <b-form-select
-                    v-model="select"
+                    v-model="kategori"
                     :options="ktg"
                   ></b-form-select>
                 </div>
                 <div class="col-md-2 mb-3">
                   <label for="c_form_kategori">Aktif</label>
-                  <b-form-select
-                    v-model="selectz"
-                    :options="akt"
-                  ></b-form-select>
+                  <b-form-select v-model="aktif" :options="akt"></b-form-select>
                 </div>
               </div>
               <b-button type="submit" variant="primary">Simpan</b-button>
@@ -75,21 +75,21 @@
 export default {
   data() {
     return {
-      jeniskelamin: null,
+      jeniskelamin: 9,
       jk: [
-        { value: null, text: "Pilih" },
+        { value: "9", text: "Pilih" },
         { value: "1", text: "Laki-laki" },
         { value: "2", text: "Perempuan" },
       ],
-      kategori: null,
+      kategori: 9,
       ktg: [
-        { value: null, text: "Pilih" },
+        { value: "9", text: "Pilih" },
         { value: "1", text: "Individu" },
         { value: "2", text: "Kelompok" },
       ],
-      aktif: null,
+      aktif: 9,
       akt: [
-        { value: null, text: "Pilih" },
+        { value: "9", text: "Pilih" },
         { value: "1", text: "Individu" },
         { value: "2", text: "Kelompok" },
       ],

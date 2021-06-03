@@ -36,7 +36,7 @@
               "type": "link"
             },
             {
-              "path": "main/kantorlayanan",
+              "path": "/main/kantorlayanan",
               "title": "Kantor Layanan",
               "type": "link"
             }
