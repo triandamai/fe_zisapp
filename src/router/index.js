@@ -97,6 +97,30 @@ const routes = [
           title: "Edit Mustahik",
         },
       },
+      {
+        path: "kantorlayanan",
+        name: "kantorlayanan",
+        component: () => import("@/pages/kantorlayanan/datakantorlayanan.vue"),
+        meta: {
+          title: "Data Kantor Layanan",
+        },
+      },
+      {
+        path: "kantorlayanan/add",
+        name: "addkantorlayanan",
+        component: () => import("@/pages/kantorlayanan/addkantor.vue"),
+        meta: {
+          title: "Tambah Kantor Layanan",
+        },
+      },
+      {
+        path: "kantorlayanan/edit",
+        name: "editkantorlayanan",
+        component: () => import("@/pages/kantorlayanan/editkantor.vue"),
+        meta: {
+          title: "Edit Kantor Layanan",
+        },
+      },
 
       /**
        *!ini buat contoh

@@ -6,7 +6,7 @@
           <div slot="with-padding">
             <b-form class="needs-validation" @submit="onsubmit">
               <div class="form-row">
-                <div class="col-md-4 mb-">
+                <div class="col-md-4 mb-1">
                   <label for="c_form_first_name">NPWZ</label>
                   <b-form-input type="text" placeholder="NPWP"></b-form-input>
                 </div>
@@ -23,11 +23,7 @@
                 </div>
                 <div class="col-md-4 mb-3">
                   <label for="c_form_nama">Nama</label>
-                  <b-form-input
-                    type="text"
-                    id="c_form_nama-muzaki"
-                    placeholder="Nama"
-                  ></b-form-input>
+                  <b-form-input type="text" placeholder="Nama"></b-form-input>
                   <b-form-invalid-feedback
                     >Please provide a valid state.</b-form-invalid-feedback
                   >
@@ -35,8 +31,8 @@
                 <div class="col-md-2 mb-3">
                   <label for="c_form_jeniskelamin">Jenis Kelamin</label>
                   <b-form-select
-                    v-model="selected"
-                    :options="options"
+                    v-model="jeniskelamin"
+                    :options="jk"
                   ></b-form-select>
                 </div>
               </div>
@@ -44,6 +40,26 @@
                 <div class="col-md-10 mb-3">
                   <label for="c_form_alamat">Alamat</label>
                   <b-form-input type="text" placeholder="Alamat"></b-form-input>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="c_form_telepon">Telepon</label>
+                  <b-form-input
+                    type="text"
+                    placeholder="Telepon"
+                  ></b-form-input>
+                </div>
+                <div class="col-md-2 mb-3">
+                  <label for="c_form_kategori">Kategori</label>
+                  <b-form-select
+                    v-model="kategori"
+                    :options="ktg"
+                  ></b-form-select>
+                </div>
+                <div class="col-md-2 mb-3">
+                  <label for="c_form_kategori">Aktif</label>
+                  <b-form-select v-model="aktif" :options="akt"></b-form-select>
                 </div>
               </div>
               <b-button type="submit" variant="primary">Simpan</b-button>
@@ -59,12 +75,23 @@
 export default {
   data() {
     return {
-      selected: null,
-      options: [
-        { value: null, text: "Pilih" },
+      jeniskelamin: 9,
+      jk: [
+        { value: "9", text: "Pilih" },
         { value: "1", text: "Laki-laki" },
         { value: "2", text: "Perempuan" },
-        { value: "AKSI", text: "action" },
+      ],
+      kategori: 9,
+      ktg: [
+        { value: "9", text: "Pilih" },
+        { value: "1", text: "Individu" },
+        { value: "2", text: "Kelompok" },
+      ],
+      aktif: 9,
+      akt: [
+        { value: "9", text: "Pilih" },
+        { value: "1", text: "Individu" },
+        { value: "2", text: "Kelompok" },
       ],
     };
   },
