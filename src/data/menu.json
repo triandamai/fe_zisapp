@@ -15,7 +15,7 @@
     },
     {
       "title": "Master Data",
-      "icon": "server",
+      "icon": "database",
       "type": "sub",
       "active": false,
       "children": [
@@ -43,7 +43,7 @@
     },
     {
       "title": "Pelayanan",
-      "icon": "codesandbox",
+      "icon": "briefcase",
       "type": "sub",
       "active": false,
       "children": [

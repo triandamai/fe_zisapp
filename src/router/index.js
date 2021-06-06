@@ -67,7 +67,7 @@ const routes = [
         },
       },
       {
-        path: "user",
+        path: "user/edit",
         name: "edituser",
         component: () => import("@/pages/user/edituser.vue"),
         meta: {
