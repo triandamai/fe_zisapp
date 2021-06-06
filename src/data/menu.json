@@ -44,13 +44,73 @@
     {
       "title": "Pelayanan",
       "icon": "codesandbox",
-      "type": "link",
+      "type": "sub",
       "active": false,
       "children": [
         {
-          "path": "/main/pelayananmuzaki",
           "title": "Muzaki",
-          "type": "link"
+          "type": "sub",
+          "active": false,
+          "children": [
+            {
+              "path": "/pelayanan/muzaki/donasi",
+              "title": "Donasi",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/donasi-kantor-layanan",
+              "title": "Donasi Kantor Layanan",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/batal-donasi",
+              "title": "Batal Donasi",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/batal-donasi-kantor-layanan",
+              "title": "Batal Donasi Kantor Layanan",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/penerimaan-kas",
+              "title": "Penerimaan KAS ZISR/FO",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/rekap-penerimaan",
+              "title": "Rekap Penerimaan",
+              "type": "link"
+            }
+          ]
+        },
+        {
+          "title": "Mustahik",
+          "icon": "codesandbox",
+          "type": "sub",
+          "active": false,
+          "children": [
+            {
+              "path": "/pelayanan/mustahik/pengajuan",
+              "title": "Pengajuan",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/mustahik/disposisi",
+              "title": "Disposisi",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/mustahik/status-pengajuan",
+              "title": "Status Pengajuan",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/mustahik/get-donasi",
+              "title": "GET DONASI",
+              "type": "link"
+            }
+          ]
         }
       ]
     }
