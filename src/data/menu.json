@@ -1,111 +1,56 @@
 {
   "data": [
     {
-      "headTitle1": "General",
+      "headTitle1": "Umum",
       "headTitle2": "Dashboards,features & data.",
       "type": "headtitle",
       "path": "General"
     },
     {
       "path": "/main/dashboard",
-      "title": "Dashboard",
+      "title": "Umum",
       "icon": "codesandbox",
       "type": "link",
       "active": false
     },
     {
-      "title": "Pelayanan",
+      "title": "Master Data",
       "icon": "server",
       "type": "sub",
       "active": false,
       "children": [
+        {
+          "path": "/main/user",
+          "title": "User",
+          "type": "link"
+        },
         {
           "path": "/main/muzaki",
-          "title": "Master",
-          "type": "sub",
-          "active": false,
-          "children": [
-            {
-              "path": "/main/muzaki",
-              "title": "Muzaki",
-              "type": "link"
-            },
-            {
-              "path": "/main/mustahik",
-              "title": "Mustahik",
-              "type": "link"
-            },
-            {
-              "path": "/main/kantorlayanan",
-              "title": "Kantor Layanan",
-              "type": "link"
-            }
-          ]
+          "title": "Muzaki",
+          "type": "link"
+        },
+        {
+          "path": "/main/mustahik",
+          "title": "Mustahik",
+          "type": "link"
+        },
+        {
+          "path": "/main/kantorlayanan",
+          "title": "Kantor Layanan",
+          "type": "link"
         }
       ]
     },
     {
-      "title": "Keuangan",
-      "icon": "server",
-      "type": "sub",
+      "title": "Pelayanan",
+      "icon": "codesandbox",
+      "type": "link",
       "active": false,
       "children": [
         {
-          "path": "/main/periode",
-          "type": "sub",
-          "title": "Master",
-          "active": false,
-          "children": [
-            {
-              "path": "/main/periode",
-              "type": "link",
-              "title": "Periode",
-              "active": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Program",
-      "icon": "server",
-      "type": "sub",
-      "active": false,
-      "children": [
-        {
-          "type": "sub",
-          "title": "Master",
-          "active": false,
-          "children": [
-            {
-              "path": "/main/periode",
-              "type": "link",
-              "title": "Periode",
-              "active": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Akuntansi",
-      "icon": "server",
-      "type": "sub",
-      "active": false,
-      "children": [
-        {
-          "path": "/main/periode",
-          "type": "sub",
-          "title": "Transaksi",
-          "active": false,
-          "children": [
-            {
-              "path": "/main/periode",
-              "type": "link",
-              "title": "Donasi",
-              "active": false
-            }
-          ]
+          "path": "/main/pelayananmuzaki",
+          "title": "Muzaki",
+          "type": "link"
         }
       ]
     }

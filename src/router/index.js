@@ -49,6 +49,32 @@ const routes = [
           reqiresAuth: true,
         },
       },
+
+      {
+        path: "user",
+        name: "user",
+        component: () => import("@/pages/user/datauser.vue"),
+        meta: {
+          title: "Data User",
+        },
+      },
+      {
+        path: "user/add",
+        name: "adduser",
+        component: () => import("@/pages/user/adduser.vue"),
+        meta: {
+          title: "Tambah User",
+        },
+      },
+      {
+        path: "user",
+        name: "edituser",
+        component: () => import("@/pages/user/edituser.vue"),
+        meta: {
+          title: "Edit User",
+        },
+      },
+
       {
         path: "muzaki",
         name: "muzaki",
@@ -133,6 +159,7 @@ const routes = [
           title: "akad",
         },
       },
+
       {
         path: "akad/add",
         name: "addakad",
