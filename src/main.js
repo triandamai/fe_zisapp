@@ -32,6 +32,8 @@ import DataTable from "@/components/datatable.vue";
 import FormMuzaki from "@/components/form-muzaki.vue";
 import FormMustahik from "@/components/form-mustahik.vue";
 import FormKantorLayanan from "@/components/form-kantorlayanan.vue";
+import FormUser from "@/components/form-user.vue";
+import FormBank from "@/components/form-bank.vue";
 
 import PxCard from "@/components/Pxcard.vue";
 import { Icon } from "leaflet";
@@ -49,7 +51,8 @@ Vue.component("data-table", DataTable);
 Vue.component("FormMuzaki", FormMuzaki);
 Vue.component("FormMustahik", FormMustahik);
 Vue.component("FormKantorLayanan", FormKantorLayanan);
-
+Vue.component("FormUser", FormUser);
+Vue.component("FormBank", FormBank);
 Vue.component("Breadcrumbs", Breadcrumbs);
 
 Vue.component("apexchart", VueApexCharts);

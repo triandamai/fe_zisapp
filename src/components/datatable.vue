@@ -5,8 +5,7 @@
         data-testid="button"
         v-show="!hideadd"
         @click="$emit('add', true)"
-        outlined
-        small
+        color="primary"
         >{{ "tambah" }}</v-btn
       >
       <v-spacer></v-spacer>

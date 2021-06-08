@@ -1,111 +1,127 @@
 {
   "data": [
     {
-      "headTitle1": "General",
+      "headTitle1": "Umum",
       "headTitle2": "Dashboards,features & data.",
       "type": "headtitle",
       "path": "General"
     },
     {
       "path": "/main/dashboard",
-      "title": "Dashboard",
+      "title": "Umum",
       "icon": "codesandbox",
       "type": "link",
       "active": false
     },
     {
-      "title": "Pelayanan",
-      "icon": "server",
+      "title": "Master Data",
+      "icon": "database",
       "type": "sub",
       "active": false,
       "children": [
+        {
+          "path": "/main/user",
+          "title": "User",
+          "type": "link"
+        },
         {
           "path": "/main/muzaki",
-          "title": "Master",
-          "type": "sub",
-          "active": false,
-          "children": [
-            {
-              "path": "/main/muzaki",
-              "title": "Muzaki",
-              "type": "link"
-            },
-            {
-              "path": "/main/mustahik",
-              "title": "Mustahik",
-              "type": "link"
-            },
-            {
-              "path": "/main/kantorlayanan",
-              "title": "Kantor Layanan",
-              "type": "link"
-            }
-          ]
+          "title": "Muzaki",
+          "type": "link"
+        },
+        {
+          "path": "/main/mustahik",
+          "title": "Mustahik",
+          "type": "link"
+        },
+        {
+          "path": "/main/kantorlayanan",
+          "title": "Kantor Layanan",
+          "type": "link"
+        },
+        {
+          "path": "/main/bank",
+          "title": "Bank",
+          "type": "link"
         }
       ]
     },
     {
-      "title": "Keuangan",
-      "icon": "server",
+      "title": "Pelayanan",
+      "icon": "briefcase",
       "type": "sub",
       "active": false,
       "children": [
         {
-          "path": "/main/periode",
+          "title": "Muzaki",
           "type": "sub",
-          "title": "Master",
           "active": false,
           "children": [
             {
-              "path": "/main/periode",
-              "type": "link",
-              "title": "Periode",
-              "active": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Program",
-      "icon": "server",
-      "type": "sub",
-      "active": false,
-      "children": [
-        {
-          "type": "sub",
-          "title": "Master",
-          "active": false,
-          "children": [
-            {
-              "path": "/main/periode",
-              "type": "link",
-              "title": "Periode",
-              "active": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Akuntansi",
-      "icon": "server",
-      "type": "sub",
-      "active": false,
-      "children": [
-        {
-          "path": "/main/periode",
-          "type": "sub",
-          "title": "Transaksi",
-          "active": false,
-          "children": [
-            {
-              "path": "/main/periode",
-              "type": "link",
+              "path": "/pelayanan/muzaki/donasi",
               "title": "Donasi",
-              "active": false
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/donasi-kantor-layanan",
+              "title": "Donasi Kantor Layanan",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/batal-donasi",
+              "title": "Batal Donasi",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/batal-donasi-kantor-layanan",
+              "title": "Batal Donasi Kantor Layanan",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/penerimaan-kas",
+              "title": "Penerimaan KAS ZISR/FO",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/rekap-penerimaan",
+              "title": "Rekap Penerimaan",
+              "type": "link"
             }
           ]
+        },
+        {
+          "title": "Mustahik",
+          "icon": "codesandbox",
+          "type": "sub",
+          "active": false,
+          "children": [
+            {
+              "path": "/pelayanan/mustahik/pengajuan",
+              "title": "Pengajuan",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/mustahik/disposisi",
+              "title": "Disposisi",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/mustahik/status-pengajuan",
+              "title": "Status Pengajuan",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/mustahik/get-donasi",
+              "title": "GET DONASI",
+              "type": "link"
+            }
+          ]
+        },
+        {
+          "title": "Transaksi",
+          "icon": "briefcase",
+          "type": "sub",
+          "active": false
         }
       ]
     }

@@ -49,6 +49,32 @@ const routes = [
           reqiresAuth: true,
         },
       },
+
+      {
+        path: "user",
+        name: "user",
+        component: () => import("@/pages/user/datauser.vue"),
+        meta: {
+          title: "Data User",
+        },
+      },
+      {
+        path: "user/add",
+        name: "adduser",
+        component: () => import("@/pages/user/adduser.vue"),
+        meta: {
+          title: "Tambah User",
+        },
+      },
+      {
+        path: "user/edit",
+        name: "edituser",
+        component: () => import("@/pages/user/edituser.vue"),
+        meta: {
+          title: "Edit User",
+        },
+      },
+
       {
         path: "muzaki",
         name: "muzaki",
@@ -121,6 +147,30 @@ const routes = [
           title: "Edit Kantor Layanan",
         },
       },
+      {
+        path: "bank",
+        name: "bank",
+        component: () => import("@/pages/bank/databank.vue"),
+        meta: {
+          title: "Data Bank",
+        },
+      },
+      {
+        path: "bank/add",
+        name: "addbank",
+        component: () => import("@/pages/bank/addbank.vue"),
+        meta: {
+          title: "Tambah Bank",
+        },
+      },
+      {
+        path: "bank/edit",
+        name: "editbank",
+        component: () => import("@/pages/bank/editbank.vue"),
+        meta: {
+          title: "Edit Bank",
+        },
+      },
 
       /**
        *!ini buat contoh
@@ -133,6 +183,7 @@ const routes = [
           title: "akad",
         },
       },
+
       {
         path: "akad/add",
         name: "addakad",
