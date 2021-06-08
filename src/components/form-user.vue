@@ -24,10 +24,12 @@
                 </div>
               </div>
               <div class="form-row">
-                <div class="col-md-4 mb-3">
+                <div class="col-md-10 mb-3">
                   <label for="c_form_email">Email</label>
                   <b-form-input type="text" placeholder="Email"></b-form-input>
                 </div>
+              </div>
+              <div class="form-row">
                 <div class="col-md-3 mb-3">
                   <label for="c_form_telepon">Telepon</label>
                   <b-form-input
@@ -39,20 +41,28 @@
                   <label for="c_form_pimpinan">Level</label>
                   <b-form-select v-model="level" :options="lvl"></b-form-select>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="col-md-3 mb-3">
+                <div class="col-md-4 mb-3">
                   <label for="c_form_username">Username</label>
                   <b-form-input
                     type="text"
                     placeholder="Username"
                   ></b-form-input>
                 </div>
+              </div>
+
+              <div class="form-row">
                 <div class="col-md-3 mb-3">
                   <label for="c_form_password">Password</label>
                   <b-form-input
-                    type="password"
+                    type="text"
                     placeholder="Password"
+                  ></b-form-input>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="c_form_konpassword">Konfirmasi Password</label>
+                  <b-form-input
+                    type="konpassword"
+                    placeholder="Konfirmasi Password"
                   ></b-form-input>
                 </div>
                 <div class="col-md-4 mb-">

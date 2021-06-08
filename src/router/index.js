@@ -147,6 +147,30 @@ const routes = [
           title: "Edit Kantor Layanan",
         },
       },
+      {
+        path: "bank",
+        name: "bank",
+        component: () => import("@/pages/bank/databank.vue"),
+        meta: {
+          title: "Data Bank",
+        },
+      },
+      {
+        path: "bank/add",
+        name: "addbank",
+        component: () => import("@/pages/bank/addbank.vue"),
+        meta: {
+          title: "Tambah Bank",
+        },
+      },
+      {
+        path: "bank/edit",
+        name: "editbank",
+        component: () => import("@/pages/bank/editbank.vue"),
+        meta: {
+          title: "Edit Bank",
+        },
+      },
 
       /**
        *!ini buat contoh

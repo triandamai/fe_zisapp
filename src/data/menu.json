@@ -38,6 +38,11 @@
           "path": "/main/kantorlayanan",
           "title": "Kantor Layanan",
           "type": "link"
+        },
+        {
+          "path": "/main/bank",
+          "title": "Bank",
+          "type": "link"
         }
       ]
     },
@@ -111,6 +116,12 @@
               "type": "link"
             }
           ]
+        },
+        {
+          "title": "Transaksi",
+          "icon": "briefcase",
+          "type": "sub",
+          "active": false
         }
       ]
     }
