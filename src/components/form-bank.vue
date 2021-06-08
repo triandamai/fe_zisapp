@@ -6,14 +6,14 @@
           <div slot="with-padding">
             <b-form class="needs-validation" @submit="onsubmit">
               <div class="form-row">
-                <div class="col-md-4 mb-1">
+                <div class="col-md-6 mb-1">
                   <label for="c_form_norek">No.Rekening</label>
                   <b-form-input
                     type="text"
                     placeholder="No.Rekening"
                   ></b-form-input>
                 </div>
-                <div class="col-md-4 mb-1">
+                <div class="col-md-6 mb-1">
                   <label for="c_form_nama">Nama Bank</label>
                   <b-form-input
                     type="text"
@@ -25,17 +25,28 @@
               <div class="form-row">
                 <div class="col-md-4 mb-1">
                   <label for="c_form_kodeakun">Kode Akun</label>
-                  <b-form-input
-                    type="text"
-                    placeholder="Kode Akun"
-                  ></b-form-input>
+
+                  <v-autocomplete
+                    :items="kode"
+                    item-text="label"
+                    auto-select-first
+                    return-object
+                    outlined
+                    required
+                    small
+                  ></v-autocomplete>
                 </div>
                 <div class="col-md-4 mb-1">
                   <label for="c_form_namaakun">Nama Akun</label>
-                  <b-form-input
-                    type="text"
-                    placeholder="Nama Akun"
-                  ></b-form-input>
+                  <v-autocomplete
+                    :items="nama"
+                    item-text="label"
+                    auto-select-first
+                    return-object
+                    outlined
+                    required
+                    small
+                  ></v-autocomplete>
                 </div>
               </div>
               <div class="form-row">
@@ -54,6 +65,7 @@
                   ></b-form-input>
                 </div>
               </div>
+
               <b-button type="submit" variant="primary">Simpan</b-button>
             </b-form>
           </div>
@@ -66,7 +78,16 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      kode: [
+        { label: "laki-laki", value: "L" },
+        { label: "perempuan", value: "P" },
+      ],
+      nama: [
+        { label: "Trisna Cantik", value: "L" },
+        { label: "Trisna Manis", value: "P" },
+      ],
+    };
   },
   methods: {
     onsubmit() {},
