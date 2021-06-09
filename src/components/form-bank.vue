@@ -23,7 +23,7 @@
               </div>
 
               <div class="form-row">
-                <div class="col-md-4 mb-1">
+                <div class="col-md-12 ">
                   <label for="c_form_kodeakun">Kode Akun</label>
 
                   <v-autocomplete
@@ -36,10 +36,12 @@
                     small
                   ></v-autocomplete>
                 </div>
-                <div class="col-md-4 mb-1">
-                  <label for="c_form_namaakun">Nama Akun</label>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="c_form_kantor">Kantor Layanan</label>
                   <v-autocomplete
-                    :items="nama"
+                    :items="kantorlayanan"
                     item-text="label"
                     auto-select-first
                     return-object
@@ -47,22 +49,6 @@
                     required
                     small
                   ></v-autocomplete>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="col-md-4 mb-1">
-                  <label for="c_form_nolayanan">Nomor Layanan</label>
-                  <b-form-input
-                    type="text"
-                    placeholder="Nomor Layanan"
-                  ></b-form-input>
-                </div>
-                <div class="col-md-4 mb-1">
-                  <label for="c_form_kantor">Kantor Layanan</label>
-                  <b-form-input
-                    type="text"
-                    placeholder="Kantor Layanan"
-                  ></b-form-input>
                 </div>
               </div>
 
@@ -83,7 +69,7 @@ export default {
         { label: "laki-laki", value: "L" },
         { label: "perempuan", value: "P" },
       ],
-      nama: [
+      kantorlayanan: [
         { label: "Trisna Cantik", value: "L" },
         { label: "Trisna Manis", value: "P" },
       ],

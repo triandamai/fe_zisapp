@@ -6,14 +6,14 @@
           <div slot="with-padding">
             <b-form class="needs-validation" @submit="onsubmit">
               <div class="form-row">
-                <div class="col-md-4 mb-1">
+                <div class="col-md-6 mb-3">
                   <label for="c_form_kode">Kode </label>
                   <b-form-input
                     type="text"
                     placeholder="Kode Mustahik"
                   ></b-form-input>
                 </div>
-                <div class="col-md-6 mb-">
+                <div class="col-md-6 mb-3">
                   <label for="c_form_nama">Nama</label>
                   <b-form-input type="text" placeholder="Nama"></b-form-input>
                   <b-form-valid-feedback>Lock Good</b-form-valid-feedback>
@@ -21,48 +21,53 @@
               </div>
 
               <div class="form-row">
-                <div class="col-md-10 mb-3">
+                <div class="col-md-6 mb-3">
                   <label for="c_form_alamat">Alamat</label>
                   <b-form-input type="text" placeholder="Alamat"></b-form-input>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="col-md-4 mb-3">
+                <div class="col-md-6 mb-3">
                   <label for="c_form_telepon">Telepon</label>
                   <b-form-input
                     type="text"
                     placeholder="Telepon"
                   ></b-form-input>
                 </div>
-                <div class="col-md-2 mb-3">
+              </div>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
                   <label for="c_form_kategori">Kategori</label>
                   <b-form-select
-                    v-model="select"
+                    v-model="ktgmustahik"
                     :options="kategori"
                   ></b-form-select>
                 </div>
-                <div class="col-md-2 mb-3">
-                  <label for="c_form_kategori">Aktif</label>
+                <div class="col-md-4 mb-3">
+                  <label for="c_form_status">Status</label>
                   <b-form-select
-                    v-model="select"
-                    :options="aktif"
+                    v-model="statusmustahik"
+                    :options="status"
+                  ></b-form-select>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="c_form_status">Asnaf</label>
+                  <b-form-select
+                    v-model="mustasnaf"
+                    :options="asnaf"
                   ></b-form-select>
                 </div>
               </div>
               <div class="form-row">
-                <div class="col-md-4 mb-1">
-                  <label for="c_form_nomorkantor">Nomor Kantor </label>
-                  <b-form-input
-                    type="text"
-                    placeholder="Nomor Kantor"
-                  ></b-form-input>
-                </div>
-                <div class="col-md-4 mb-1">
+                <div class="col-md-12 mb-1">
                   <label for="c_form_kantorlayanan">Kantor Layanan </label>
-                  <b-form-input
-                    type="text"
-                    placeholder="Kantor Layanan"
-                  ></b-form-input>
+                  <v-autocomplete
+                    :items="kantorlayanan"
+                    item-text="label"
+                    auto-select-first
+                    return-object
+                    outlined
+                    required
+                    small
+                  ></v-autocomplete>
                 </div>
               </div>
               <b-button type="submit" variant="primary">Simpan</b-button>

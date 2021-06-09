@@ -6,14 +6,14 @@
           <div slot="with-padding">
             <b-form class="needs-validation" @submit="onsubmit">
               <div class="form-row">
-                <div class="col-md-4 mb-1">
+                <div class="col-md-6 mb-3">
                   <label for="c_form_nomor">Nomor Kantor </label>
                   <b-form-input
                     type="text"
                     placeholder="Nomor Kantor"
                   ></b-form-input>
                 </div>
-                <div class="col-md-6 mb-">
+                <div class="col-md-6 mb-3">
                   <label for="c_form_nama">Nama Kantor</label>
                   <b-form-input
                     type="text"
@@ -24,20 +24,20 @@
               </div>
 
               <div class="form-row">
-                <div class="col-md-10 mb-3">
+                <div class="col-md-12 mb-3">
                   <label for="c_form_alamat">Alamat</label>
                   <b-form-input type="text" placeholder="Alamat"></b-form-input>
                 </div>
               </div>
               <div class="form-row">
-                <div class="col-md-4 mb-3">
+                <div class="col-md-6 mb-3">
                   <label for="c_form_telepon">Telepon</label>
                   <b-form-input
                     type="text"
                     placeholder="Telepon"
                   ></b-form-input>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-6 mb-3">
                   <label for="c_form_pimpinan">Pimpinan</label>
                   <b-form-input
                     type="text"
