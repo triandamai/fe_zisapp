@@ -171,6 +171,14 @@ const routes = [
           title: "Edit Bank",
         },
       },
+      {
+        path: "donasi",
+        name: "donasi",
+        component: () => import("@/pages/donasi/donasi.vue"),
+        meta: {
+          title: "Donasi",
+        },
+      },
 
       /**
        *!ini buat contoh

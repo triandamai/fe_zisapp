@@ -58,7 +58,7 @@
           "active": false,
           "children": [
             {
-              "path": "/pelayanan/muzaki/donasi",
+              "path": "/main/donasi",
               "title": "Donasi",
               "type": "link"
             },
@@ -109,19 +109,13 @@
               "path": "/pelayanan/mustahik/status-pengajuan",
               "title": "Status Pengajuan",
               "type": "link"
-            },
-            {
-              "path": "/pelayanan/mustahik/get-donasi",
-              "title": "GET DONASI",
-              "type": "link"
             }
           ]
         },
         {
-          "title": "Transaksi",
-          "icon": "briefcase",
-          "type": "sub",
-          "active": false
+          "path": "/main/get-donasi",
+          "title": "GET DONASI",
+          "type": "link"
         }
       ]
     }

@@ -34,6 +34,7 @@ import FormMustahik from "@/components/form-mustahik.vue";
 import FormKantorLayanan from "@/components/form-kantorlayanan.vue";
 import FormUser from "@/components/form-user.vue";
 import FormBank from "@/components/form-bank.vue";
+import FormDonasi from "@/components/form-donasi.vue";
 
 import PxCard from "@/components/Pxcard.vue";
 import { Icon } from "leaflet";
@@ -54,6 +55,7 @@ Vue.component("FormKantorLayanan", FormKantorLayanan);
 Vue.component("FormUser", FormUser);
 Vue.component("FormBank", FormBank);
 Vue.component("Breadcrumbs", Breadcrumbs);
+Vue.component("FormDonasi", FormDonasi);
 
 Vue.component("apexchart", VueApexCharts);
 
