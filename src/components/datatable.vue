@@ -8,6 +8,14 @@
         color="primary"
         >{{ "tambah" }}</v-btn
       >
+      <v-btn
+        class="ml-4"
+        data-testid="button"
+        v-show="hidesimpan"
+        @click="$emit('simpan', true)"
+        color="primary"
+        >{{ "simpan" }}</v-btn
+      >
       <v-spacer></v-spacer>
       <v-text-field
         v-model="search"
@@ -46,7 +54,14 @@
 <script>
 import { mapState } from "vuex";
 export default {
-  props: ["items", "headers", "hideadd", "hidedelete", "hideupdate"],
+  props: [
+    "items",
+    "headers",
+    "hideadd",
+    "hidedelete",
+    "hideupdate",
+    "hidesimpan",
+  ],
   data() {
     return {
       search: "",
