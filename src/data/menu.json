@@ -96,7 +96,7 @@
           "active": false,
           "children": [
             {
-              "path": "/pelayanan/mustahik/pengajuan",
+              "path": "/main/pengajuan",
               "title": "Pengajuan",
               "type": "link"
             },
