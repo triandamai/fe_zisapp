@@ -204,6 +204,30 @@ const routes = [
           title: "Pengajuan",
         },
       },
+      {
+        path: "disposisi",
+        name: "disposisi",
+        component: () => import("@/pages/disposisi/datadisposisi.vue"),
+        meta: {
+          title: "Disposisi",
+        },
+      },
+      {
+        path: "disposisi/add",
+        name: "adddisposisi",
+        component: () => import("@/pages/disposisi/adddisposisi.vue"),
+        meta: {
+          title: "Tambah Disposisi",
+        },
+      },
+      {
+        path: "disposisi/edit",
+        name: "editdisposisi",
+        component: () => import("@/pages/disposisi/editdisposisi.vue"),
+        meta: {
+          title: "Edit Disposisi",
+        },
+      },
 
       /**
        *!ini buat contoh
