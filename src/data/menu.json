@@ -1,0 +1,123 @@
+{
+  "data": [
+    {
+      "headTitle1": "Umum",
+      "headTitle2": "Dashboards,features & data.",
+      "type": "headtitle",
+      "path": "General"
+    },
+    {
+      "path": "/main/dashboard",
+      "title": "Umum",
+      "icon": "codesandbox",
+      "type": "link",
+      "active": false
+    },
+    {
+      "title": "Master Data",
+      "icon": "database",
+      "type": "sub",
+      "active": false,
+      "children": [
+        {
+          "path": "/main/user",
+          "title": "User",
+          "type": "link"
+        },
+        {
+          "path": "/main/muzaki",
+          "title": "Muzaki",
+          "type": "link"
+        },
+        {
+          "path": "/main/mustahik",
+          "title": "Mustahik",
+          "type": "link"
+        },
+        {
+          "path": "/main/kantorlayanan",
+          "title": "Kantor Layanan",
+          "type": "link"
+        },
+        {
+          "path": "/main/bank",
+          "title": "Bank",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "title": "Pelayanan",
+      "icon": "briefcase",
+      "type": "sub",
+      "active": false,
+      "children": [
+        {
+          "title": "Muzaki",
+          "type": "sub",
+          "active": false,
+          "children": [
+            {
+              "path": "/main/donasi",
+              "title": "Donasi",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/donasi-kantor-layanan",
+              "title": "Donasi Kantor Layanan",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/batal-donasi",
+              "title": "Batal Donasi",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/batal-donasi-kantor-layanan",
+              "title": "Batal Donasi Kantor Layanan",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/penerimaan-kas",
+              "title": "Penerimaan KAS ZISR/FO",
+              "type": "link"
+            },
+            {
+              "path": "/pelayanan/muzaki/rekap-penerimaan",
+              "title": "Rekap Penerimaan",
+              "type": "link"
+            }
+          ]
+        },
+        {
+          "title": "Mustahik",
+          "icon": "codesandbox",
+          "type": "sub",
+          "active": false,
+          "children": [
+            {
+              "path": "/main/pengajuan",
+              "title": "Pengajuan",
+              "type": "link"
+            },
+            {
+              "path": "/main/disposisi",
+              "title": "Disposisi",
+              "type": "link"
+            },
+            {
+              "path": "/main/status-pengajuan",
+              "title": "Status Pengajuan",
+              "type": "link"
+            }
+          ]
+        },
+        {
+          "path": "/main/get-donasi",
+          "title": "GET DONASI",
+          "type": "link"
+        }
+      ]
+    }
+  ]
+}

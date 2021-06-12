@@ -1,43 +1,53 @@
-# fe_zisapp
+# bank-falah-syariah
 
-Front End
+### Customize configuration
 
-## commit message
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### DOC
+
+### project structure
+
+```java
+public
+src
+  assets
+    ...
+  constants
+    ..
+  services
+    ...
+  data
+    ...
+  locales
+    ...
+  store
+    module
+      ...
+    utils
+      ...
+  components
+    ...
+  pages
+      pages
+        ...
+  plugins
+    vuetify.js
+  router
+    router.js
+
+  .eslintrc.js
+  App.vue
+  main.js
 
 ```
-feat(*scope): message body footer = penambahan fitur/code
-fix(*scope): message body footer = perbaikan bug/error
-refactor(*scope): message body footer = perubahan pada kode/fitur
-chore = perubahan kecil misal hapus titik(.), koma(,) dsb
-```
 
--   `scope` opsional diganti fitur/bagian yang idkerjakan 
--   `message` pesan di commit 
--   `body` apa yang dirubah/ditambah(opsional), 
--   `footer` footnote (opsional)
+Menu
 
-  contoh:
-
-  ```
-  fix(login): login selalu gagal
-
-  kurang koma di baris 20
-
-  Fixes #1
-  ```
-  atau
-  ```
-  feat(main): hapus data
-  tambah function tambah()
-  ```
-
-## struktur
-
-```
-- src
-    - pages
-        - Home.vue
-    App.vue
-    main.js
-
+```json
+{
+  "path:"",
+  "id":1,
+  "type":"",
+}
 ```
