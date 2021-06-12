@@ -106,7 +106,7 @@
               "type": "link"
             },
             {
-              "path": "/pelayanan/mustahik/status-pengajuan",
+              "path": "/main/status-pengajuan",
               "title": "Status Pengajuan",
               "type": "link"
             }

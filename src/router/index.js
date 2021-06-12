@@ -228,6 +228,15 @@ const routes = [
           title: "Edit Disposisi",
         },
       },
+      {
+        path: "statuspengajuan",
+        name: "statuspengajuan",
+        component: () =>
+          import("@/pages/status-pengajuan/status-pengajuan.vue"),
+        meta: {
+          title: "Status Pengajuan",
+        },
+      },
 
       /**
        *!ini buat contoh

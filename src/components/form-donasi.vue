@@ -118,8 +118,8 @@
                 :items="data"
                 :headers="headers"
                 :hidesimpan="true"
-                @add="$router.push({ path: '/main/mustahik/add' })"
-                @edit="$router.push({ path: '/main/mustahik/edit' })"
+                @simpan="onSimpan"
+                @add="onTambah"
                 @delete="onDelete"
               />
             </b-form>
@@ -152,6 +152,10 @@ export default {
   },
   methods: {
     onsubmit() {},
+
+    onTambah() {},
+
+    onSimpan() {},
   },
 };
 </script>
