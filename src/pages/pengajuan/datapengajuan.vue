@@ -1,21 +1,21 @@
 <template>
   <div>
-    <Breadcrumbs title="User" />
+    <Breadcrumbs title="Pengajuan" />
     <!-- Container-fluid starts-->
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <h5>Data User</h5>
+              <h5>Data Pengajuan</h5>
             </div>
             <div class="card-body">
               <!-- TAMBAHIN KONTENYA DISINI -->
               <data-table
                 :items="data"
                 :headers="headers"
-                @add="$router.push({ path: '/main/user/add' })"
-                @edit="$router.push({ path: '/main/user/edit' })"
+                @add="$router.push({ path: '/main/pengajuan/add' })"
+                @edit="$router.push({ path: '/main/pengajuan/edit' })"
                 @delete="onDelete"
               />
             </div>
@@ -32,8 +32,8 @@ export default {
   data: () => {
     return {
       headers: [
-        { text: "Nama", value: "id" },
-        { text: "Jabatan", value: "id" },
+        { text: "NO", value: "id" },
+        { text: "NPWP", value: "id" },
         { text: "AKSI", value: "action" },
       ],
       data: [],

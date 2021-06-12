@@ -171,6 +171,39 @@ const routes = [
           title: "Edit Bank",
         },
       },
+      {
+        path: "donasi",
+        name: "donasi",
+        component: () => import("@/pages/donasi/donasi.vue"),
+        meta: {
+          title: "Donasi",
+        },
+      },
+      {
+        path: "pengajuan",
+        name: "pengajuan",
+        component: () => import("@/pages/pengajuan/datapengajuan.vue"),
+        meta: {
+          title: "Pengajuan",
+        },
+      },
+      {
+        path: "pengajuan/edit",
+        name: "editpengajuan",
+        component: () => import("@/pages/pengajuan/editpengajuan.vue"),
+        meta: {
+          title: "Pengajuan",
+        },
+      },
+
+      {
+        path: "pengajuan/add",
+        name: "addpengajuan",
+        component: () => import("@/pages/pengajuan/addpengajuan.vue"),
+        meta: {
+          title: "Pengajuan",
+        },
+      },
 
       /**
        *!ini buat contoh

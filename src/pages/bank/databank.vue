@@ -37,6 +37,7 @@ export default {
       headers: [
         { text: "NO", value: "id" },
         { text: "NPWP", value: "id" },
+        { text: "AKSI", value: "action" },
       ],
       data: [],
     };
